@@ -103,11 +103,11 @@ export default function Notepad() {
         </h2>
         <div className="flex items-center space-x-2">
           {activeNote && (
-            <button onClick={handleSaveNote} disabled={isSaving} className="text-[#2563EB] hover:bg-blue-50 p-1 rounded transition-colors text-xs font-medium flex items-center">
+            <button onClick={handleSaveNote} disabled={isSaving} className="text-gremso hover:bg-gremso-soft p-1 rounded transition-colors text-xs font-medium flex items-center">
                <Check className="w-3 h-3 mr-1" /> {isSaving ? 'Saving...' : 'Save'}
             </button>
           )}
-          <button onClick={handleCreateNote} className="text-[#6B7280] hover:text-[#2563EB] p-1 rounded transition-colors">
+          <button onClick={handleCreateNote} className="text-[#6B7280] hover:text-gremso p-1 rounded transition-colors">
             <Plus className="w-4 h-4" />
           </button>
         </div>
@@ -123,7 +123,7 @@ export default function Notepad() {
               <div 
                 key={note._id} 
                 onClick={() => { setActiveNote(note); setTitle(note.title); setContent(note.content); }}
-                className={`p-3 border-b border-[#E5DED6] cursor-pointer hover:bg-white transition-colors flex justify-between group flex-col ${activeNote?._id === note._id ? 'bg-white border-l-2 border-l-[#2563EB]' : ''}`}
+                className={`p-3 border-b border-[#E5DED6] cursor-pointer hover:bg-white transition-colors flex justify-between group flex-col ${activeNote?._id === note._id ? 'bg-white border-l-2 border-l-gremso' : ''}`}
               >
                 <div className="flex justify-between items-start w-full">
                   <div className="truncate text-sm font-semibold text-[#1F2937] flex-1 pr-2">

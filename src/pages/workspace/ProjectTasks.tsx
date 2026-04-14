@@ -47,7 +47,7 @@ function SortableTaskItem({ task, onClick }: { task: any, onClick: () => void })
       {...attributes}
       {...listeners}
       onClick={onClick}
-      className={`bg-white p-4 rounded-xl shadow-sm border border-[#E5DED6] mb-3 cursor-grab hover:shadow-md transition-shadow ${isDragging ? 'ring-2 ring-[#2563EB] z-50' : ''}`}
+      className={`bg-white p-4 rounded-xl shadow-sm border border-[#E5DED6] mb-3 cursor-grab hover:shadow-md transition-shadow ${isDragging ? 'ring-2 ring-gremso z-50' : ''}`}
     >
       <div className="flex justify-between items-start mb-2">
         <span className={`text-[10px] font-bold px-2 py-1 rounded-full uppercase ${getPriorityColor(task.priority)}`}>
@@ -55,7 +55,7 @@ function SortableTaskItem({ task, onClick }: { task: any, onClick: () => void })
         </span>
         <div className="flex -space-x-1">
           {task.assignedTo && (
-            <div className="w-6 h-6 rounded-full bg-[#EFE9E1] text-[#2563EB] flex items-center justify-center text-xs font-bold border border-white" title={task.assignedTo.name}>
+            <div className="w-6 h-6 rounded-full bg-[#EFE9E1] text-gremso flex items-center justify-center text-xs font-bold border border-white" title={task.assignedTo.name}>
               {task.assignedTo.name?.charAt(0)}
             </div>
           )}
@@ -203,7 +203,7 @@ export default function ProjectTasks({ projectId }: { projectId: string }) {
         {isManager && (
           <button
             onClick={() => setIsCreateModalOpen(true)}
-            className="flex w-full items-center justify-center space-x-2 rounded-lg bg-[#2563EB] px-3 py-2 text-sm text-white transition-colors hover:bg-[#1D4ED8] sm:w-auto"
+            className="flex w-full items-center justify-center space-x-2 rounded-lg bg-gremso px-3 py-2 text-sm text-white transition-colors hover:bg-gremso-dark sm:w-auto"
           >
             <Plus className="w-4 h-4" />
             <span>Add Task</span>
@@ -270,7 +270,7 @@ export default function ProjectTasks({ projectId }: { projectId: string }) {
 
           <DragOverlay>
             {activeTask ? (
-              <div className="bg-white p-4 rounded-xl shadow-xl border-2 border-[#2563EB] rotate-3 cursor-grabbing opacity-90 w-[280px]">
+              <div className="bg-white p-4 rounded-xl shadow-xl border-2 border-gremso rotate-3 cursor-grabbing opacity-90 w-[280px]">
                 <h3 className="text-sm font-semibold text-[#1F2937] mb-2">{activeTask.title}</h3>
                 <div className="flex justify-between text-xs text-[#6B7280]">
                   <span>{activeTask.priority} Priority</span>
@@ -320,7 +320,7 @@ export default function ProjectTasks({ projectId }: { projectId: string }) {
               </div>
               <div className="flex justify-end gap-3 pt-4 border-t border-[#E5DED6]">
                 <button type="button" onClick={() => setIsCreateModalOpen(false)} className="px-4 py-2 text-[#6B7280]">Cancel</button>
-                <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white rounded-lg">Create</button>
+                <button type="submit" className="px-4 py-2 bg-gremso text-white rounded-lg">Create</button>
               </div>
             </form>
           </div>
@@ -390,7 +390,7 @@ export default function ProjectTasks({ projectId }: { projectId: string }) {
               </div>
               <div className="flex justify-end gap-3 pt-4 border-t border-[#E5DED6]">
                 <button type="button" onClick={() => { setIsEditModalOpen(false); setSelectedTask(null); }} className="px-4 py-2 text-[#6B7280]">Cancel</button>
-                <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white rounded-lg">Save Changes</button>
+                <button type="submit" className="px-4 py-2 bg-gremso text-white rounded-lg">Save Changes</button>
               </div>
             </form>
           </div>

@@ -23,7 +23,7 @@ export default function UpgradePrompt({
         {showButton ? (
           <Link
             to="/pricing"
-            className="inline-flex items-center justify-center rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
+            className="inline-flex items-center justify-center rounded-lg bg-gremso px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gremso-dark"
           >
             Upgrade Plan
           </Link>

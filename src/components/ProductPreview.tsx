@@ -12,7 +12,7 @@ export default function ProductPreview() {
           </p>
         </div>
 
-        <div className="relative mx-auto w-full rounded-2xl shadow-2xl lg:max-w-5xl overflow-hidden mt-12 ring-1 ring-indigo-600/5 bg-gray-50 aspect-video group transition-transform duration-500 hover:scale-[1.01]">
+        <div className="relative mx-auto w-full rounded-2xl shadow-2xl lg:max-w-5xl overflow-hidden mt-12 ring-1 ring-gremso/5 bg-gray-50 aspect-video group transition-transform duration-500 hover:scale-[1.01]">
           {/* Faux browser header */}
           <div className="bg-gray-100 flex items-center px-4 py-3 border-b border-gray-200">
             <div className="flex space-x-2">
@@ -39,7 +39,7 @@ export default function ProductPreview() {
             <div className="flex-1 flex flex-col space-y-6">
               <div className="flex items-center justify-between">
                 <div className="h-8 bg-gray-200 rounded w-1/3"></div>
-                <div className="h-8 bg-indigo-100 rounded w-24"></div>
+                <div className="h-8 bg-gremso-soft rounded w-24"></div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div className="h-32 bg-white rounded-xl shadow-sm border border-gray-100 p-4 shrink-0 transition-shadow hover:shadow-md">

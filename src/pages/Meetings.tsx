@@ -172,7 +172,7 @@ export default function Meetings() {
           <span>
             Meeting saved. Email sending was skipped or failed.
             <button
-              className="ml-3 rounded bg-[#2563EB] px-2 py-1 text-xs text-white"
+              className="ml-3 rounded bg-gremso px-2 py-1 text-xs text-white"
               onClick={() => toast.dismiss(t.id)}
             >
               Close
@@ -252,7 +252,7 @@ export default function Meetings() {
         </div>
         <button
           onClick={() => setIsCreateModalOpen(true)}
-          className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2 text-white shadow-sm transition-colors hover:bg-[#1D4ED8] sm:w-auto"
+          className="flex w-full items-center justify-center gap-2 rounded-lg bg-gremso px-4 py-2 text-white shadow-sm transition-colors hover:bg-gremso-dark sm:w-auto"
         >
           <Plus className="h-5 w-5" />
           Create Meeting
@@ -308,16 +308,16 @@ export default function Meetings() {
                   onClick={() => setSelectedDateKey(dateKey)}
                   className={`min-h-[88px] rounded-2xl border p-2 text-left transition-all ${
                     isSelected
-                      ? 'border-[#2563EB] bg-blue-50 shadow-sm'
+                      ? 'border-gremso bg-gremso-soft shadow-sm'
                       : 'border-[#E5DED6] bg-[#F9F7F3] hover:border-[#C9BEAF]'
                   } ${isSameMonth(day, currentMonth) ? 'text-[#1F2937]' : 'text-[#A8A29E]'}`}
                 >
                   <div className="mb-2 flex items-center justify-between">
-                    <span className={`text-sm font-semibold ${isSameDay(day, new Date()) ? 'text-[#2563EB]' : ''}`}>
+                    <span className={`text-sm font-semibold ${isSameDay(day, new Date()) ? 'text-gremso' : ''}`}>
                       {format(day, 'd')}
                     </span>
                     {dayMeetings.length > 0 && (
-                      <span className="rounded-full bg-[#2563EB] px-2 py-0.5 text-[10px] font-medium text-white">
+                      <span className="rounded-full bg-gremso px-2 py-0.5 text-[10px] font-medium text-white">
                         {dayMeetings.length}
                       </span>
                     )}
@@ -357,14 +357,14 @@ export default function Meetings() {
                   key={meeting._id}
                   type="button"
                   onClick={() => setSelectedMeeting(meeting)}
-                  className="w-full rounded-2xl border border-[#E5DED6] bg-[#F9F7F3] p-4 text-left transition-colors hover:border-[#2563EB] hover:bg-white"
+                  className="w-full rounded-2xl border border-[#E5DED6] bg-[#F9F7F3] p-4 text-left transition-colors hover:border-gremso hover:bg-white"
                 >
                   <div className="mb-2 flex items-start justify-between gap-3">
                     <div>
                       <h3 className="font-semibold text-[#1F2937]">{meeting.title}</h3>
                       <p className="mt-1 text-sm text-[#6B7280]">{meeting.description || 'No description provided.'}</p>
                     </div>
-                    <Video className="h-5 w-5 shrink-0 text-[#2563EB]" />
+                    <Video className="h-5 w-5 shrink-0 text-gremso" />
                   </div>
                   <div className="flex flex-wrap items-center gap-3 text-xs text-[#6B7280]">
                     <span className="inline-flex items-center gap-1">
@@ -411,7 +411,7 @@ export default function Meetings() {
                       {format(parseISO(meeting.date), 'dd MMM yyyy')} at {meeting.time}
                     </p>
                   </div>
-                  <CalendarDays className="h-5 w-5 shrink-0 text-[#2563EB]" />
+                  <CalendarDays className="h-5 w-5 shrink-0 text-gremso" />
                 </div>
 
                 <p className="mb-4 text-sm text-[#6B7280]">
@@ -430,7 +430,7 @@ export default function Meetings() {
                   <button
                     type="button"
                     onClick={() => window.open(meeting.meetingLink, '_blank', 'noopener,noreferrer')}
-                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-gremso px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gremso-dark"
                   >
                     <ExternalLink className="h-4 w-4" />
                     Join Meeting
@@ -484,7 +484,7 @@ export default function Meetings() {
                   required
                   value={formData.title}
                   onChange={(e) => setFormData((prev) => ({ ...prev, title: e.target.value }))}
-                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="Weekly site coordination"
                 />
               </div>
@@ -495,7 +495,7 @@ export default function Meetings() {
                   value={formData.description}
                   onChange={(e) => setFormData((prev) => ({ ...prev, description: e.target.value }))}
                   rows={3}
-                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="Agenda, notes, or key discussion points"
                 />
               </div>
@@ -508,7 +508,7 @@ export default function Meetings() {
                     required
                     value={formData.date}
                     onChange={(e) => setFormData((prev) => ({ ...prev, date: e.target.value }))}
-                    className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                    className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   />
                 </div>
                 <div>
@@ -518,7 +518,7 @@ export default function Meetings() {
                     required
                     value={formData.time}
                     onChange={(e) => setFormData((prev) => ({ ...prev, time: e.target.value }))}
-                    className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                    className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   />
                 </div>
               </div>
@@ -530,7 +530,7 @@ export default function Meetings() {
                   required
                   value={formData.meetingLink}
                   onChange={(e) => setFormData((prev) => ({ ...prev, meetingLink: e.target.value }))}
-                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="https://meet.google.com/..."
                 />
               </div>
@@ -555,7 +555,7 @@ export default function Meetings() {
                           type="checkbox"
                           checked={formData.teamMembers.includes(member.email)}
                           onChange={() => handleToggleTeamMember(member.email)}
-                          className="mt-1 h-4 w-4 rounded border-[#D6CDC1] text-[#2563EB] focus:ring-[#2563EB]"
+                          className="mt-1 h-4 w-4 rounded border-[#D6CDC1] text-gremso focus:ring-gremso"
                         />
                         <div className="min-w-0">
                           <p className="font-medium text-[#1F2937]">{member.name}</p>
@@ -578,7 +578,7 @@ export default function Meetings() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="rounded-lg bg-[#2563EB] px-4 py-2 text-white transition-colors hover:bg-[#1D4ED8] disabled:opacity-50"
+                  className="rounded-lg bg-gremso px-4 py-2 text-white transition-colors hover:bg-gremso-dark disabled:opacity-50"
                 >
                   {isSubmitting ? 'Creating...' : 'Create Meeting'}
                 </button>
@@ -632,7 +632,7 @@ export default function Meetings() {
                   href={selectedMeeting.meetingLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="break-all text-sm text-[#2563EB] hover:underline"
+                  className="break-all text-sm text-gremso hover:underline"
                 >
                   {selectedMeeting.meetingLink}
                 </a>
@@ -643,7 +643,7 @@ export default function Meetings() {
               <button
                 type="button"
                 onClick={() => window.open(selectedMeeting.meetingLink, '_blank', 'noopener,noreferrer')}
-                className="inline-flex items-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
+                className="inline-flex items-center gap-2 rounded-lg bg-gremso px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gremso-dark"
               >
                 <ExternalLink className="h-4 w-4" />
                 Join Meeting

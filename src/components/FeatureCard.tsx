@@ -11,9 +11,13 @@ export default function FeatureCard({
   title,
   description,
 }: FeatureCardProps) {
+  const iconHoverBg = 'group-hover:bg-gremso';
+
   return (
     <div className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-200">
-      <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-600 transition-colors">
+      <div
+        className={`w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4 transition-colors ${iconHoverBg}`}
+      >
         <Icon className="w-6 h-6 text-gray-800 group-hover:text-white transition-colors" />
       </div>
       <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>

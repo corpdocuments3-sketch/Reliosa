@@ -20,17 +20,21 @@ export default function PricingCard({
   features,
   popular = false,
 }: PricingCardProps) {
+  const popularBorder = 'border-gremso';
+  const popularBadge = 'bg-gremso';
+  const popularCta = 'bg-gremso text-white hover:bg-gremso-dark';
+
   return (
     <div
       className={`relative p-8 bg-white rounded-xl border-2 transition-all ${
         popular
-          ? 'border-indigo-600 shadow-xl'
+          ? `${popularBorder} shadow-xl`
           : 'border-gray-200 hover:border-gray-300 hover:shadow-lg'
       }`}
     >
       {popular && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <span className="bg-indigo-600 text-white px-4 py-1 rounded-full text-xs font-semibold">
+          <span className={`${popularBadge} text-white px-4 py-1 rounded-full text-xs font-semibold`}>
             POPULAR
           </span>
         </div>
@@ -51,9 +55,7 @@ export default function PricingCard({
       <Link
         to="/pricing"
         className={`block w-full rounded-lg px-6 py-3 text-center font-medium transition-colors mb-6 ${
-          popular
-            ? 'bg-indigo-600 text-white hover:bg-indigo-700'
-            : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+          popular ? popularCta : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
         }`}
       >
         Get Started

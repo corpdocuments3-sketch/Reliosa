@@ -99,7 +99,7 @@ export default function Settings() {
                 {isManager ? (
                   <Link
                     to="/pricing"
-                    className="inline-flex items-center justify-center rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
+                    className="inline-flex items-center justify-center rounded-lg bg-gremso px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gremso-dark"
                   >
                     Upgrade Plan
                   </Link>
@@ -127,7 +127,7 @@ export default function Settings() {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                   />
                 </div>
                 <div>
@@ -145,10 +145,10 @@ export default function Settings() {
                     type="text"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                   />
                 </div>
-                <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors shadow-sm">
+                <button type="submit" className="px-4 py-2 bg-gremso text-white rounded-lg hover:bg-gremso-dark transition-colors shadow-sm">
                   Save Changes
                 </button>
               </form>
@@ -165,7 +165,7 @@ export default function Settings() {
                     required
                     value={currentPassword}
                     onChange={(e) => setCurrentPassword(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                   />
                 </div>
                 <div>
@@ -176,7 +176,7 @@ export default function Settings() {
                     minLength={8}
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                   />
                 </div>
                 <div>
@@ -187,10 +187,10 @@ export default function Settings() {
                     minLength={8}
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                   />
                 </div>
-                <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors shadow-sm">
+                <button type="submit" className="px-4 py-2 bg-gremso text-white rounded-lg hover:bg-gremso-dark transition-colors shadow-sm">
                   Update Password
                 </button>
               </form>
@@ -207,7 +207,7 @@ export default function Settings() {
                       type="text"
                       value={companyName}
                       onChange={(e) => setCompanyName(e.target.value)}
-                      className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                      className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                     />
                   </div>
                   <div>
@@ -216,10 +216,10 @@ export default function Settings() {
                       type="text"
                       value={companyAddress}
                       onChange={(e) => setCompanyAddress(e.target.value)}
-                      className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none"
+                      className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none"
                     />
                   </div>
-                  <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors shadow-sm">
+                  <button type="submit" className="px-4 py-2 bg-gremso text-white rounded-lg hover:bg-gremso-dark transition-colors shadow-sm">
                     Update Company Info
                   </button>
                 </form>

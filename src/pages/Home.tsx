@@ -124,7 +124,7 @@ export default function Home() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1F2937] mb-6 tracking-tight">
             Scaffolding Management
             <br />
-            <span className="text-indigo-600">Made Simple</span>
+            <span className="text-gremso">Made Simple</span>
           </h1>
           <p className="text-xl text-[#6B7280] mb-10 max-w-3xl mx-auto leading-relaxed">
             The modern platform for construction teams to manage scaffolding
@@ -133,14 +133,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/signup"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-[#2563EB] rounded-lg hover:bg-[#1D4ED8] shadow-sm transition-colors group"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-gremso rounded-lg hover:bg-gremso-dark shadow-sm transition-colors group"
             >
               Get Started Free
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/about"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-indigo-700 bg-indigo-50 rounded-lg hover:bg-indigo-100 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gremso-dark bg-gremso-soft rounded-lg hover:bg-cyan-100 transition-colors"
             >
               Learn More
             </Link>
@@ -206,7 +206,7 @@ export default function Home() {
               <span className={`text-sm font-medium ${!isYearly ? 'text-[#1F2937]' : 'text-[#6B7280]'}`}>Monthly</span>
               <button
                 type="button"
-                className="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-[#2563EB] transition-colors duration-200 ease-in-out focus:outline-none"
+                className="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gremso transition-colors duration-200 ease-in-out focus:outline-none"
                 role="switch"
                 aria-checked={isYearly}
                 onClick={() => setIsYearly(!isYearly)}

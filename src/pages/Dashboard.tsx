@@ -254,7 +254,7 @@ export default function Dashboard() {
               <div className="rounded-2xl border border-[#E5DED6] bg-white p-5 shadow-sm">
                 <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#2563EB]">Active Plan</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gremso">Active Plan</p>
                     <h2 className="mt-2 text-2xl font-bold text-[#1F2937]">{planSnapshot.plan.label}</h2>
                     <p className="mt-2 text-sm text-[#6B7280]">
                       Team usage: {planSnapshot.usage.teamMembersUsed} / {planSnapshot.limits?.teamMembers ?? 'Unlimited'} members
@@ -400,14 +400,14 @@ export default function Dashboard() {
                       className="flex cursor-pointer flex-col gap-3 rounded-lg p-3 transition-colors hover:bg-[#EFE9E1] sm:flex-row sm:items-center sm:justify-between"
                     >
                       <div className="flex items-center space-x-3">
-                        <FolderOpen className="w-4 h-4 text-[#2563EB]" />
+                        <FolderOpen className="w-4 h-4 text-gremso" />
                         <span className="text-sm text-[#1F2937]">{project.name}</span>
                       </div>
                       <span
                         className={`text-xs px-2 py-1 rounded-full ${
                           project.status === 'Planning'
                             ? 'bg-yellow-50 text-yellow-700 ring-1 ring-yellow-600/20'
-                            : 'bg-blue-50 text-blue-700 ring-1 ring-blue-600/20'
+                            : 'bg-gremso-soft text-gremso-dark ring-1 ring-gremso/20'
                         }`}
                       >
                         {project.status}
@@ -437,14 +437,14 @@ export default function Dashboard() {
                 activities.map((activity: any, index: number) => (
                   <div key={index} className="flex items-start space-x-3 p-3 hover:bg-[#EFE9E1] rounded-lg transition-colors">
                     <div className="w-10 h-10 bg-[#white] rounded-full flex items-center justify-center flex-shrink-0 border border-[#E5DED6]">
-                      <span className="text-[#2563EB] font-bold text-sm">
+                      <span className="text-gremso font-bold text-sm">
                         {activity.user && typeof activity.user === 'string' ? activity.user.charAt(0).toUpperCase() : '?'}
                       </span>
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-[#1F2937]">
                         <span className="font-semibold">{activity.user}</span> {activity.message.replace(` – by ${activity.user.split(' ')[0]}`, '')}
-                        {activity.project && <span className="text-[#2563EB]"> ({activity.project})</span>}
+                        {activity.project && <span className="text-gremso"> ({activity.project})</span>}
                       </p>
                       <p className="text-xs text-[#6B7280] mt-1">{activity.time}</p>
                     </div>
@@ -478,16 +478,16 @@ export default function Dashboard() {
             <form onSubmit={handleCreateTask} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-[#1F2937] mb-1">Task Title</label>
-                <input type="text" required value={taskTitle} onChange={(e) => setTaskTitle(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" />
+                <input type="text" required value={taskTitle} onChange={(e) => setTaskTitle(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#1F2937] mb-1">Description</label>
-                <textarea value={taskDescription} onChange={(e) => setTaskDescription(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" rows={3} />
+                <textarea value={taskDescription} onChange={(e) => setTaskDescription(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" rows={3} />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-[#1F2937] mb-1">Project</label>
-                  <select value={taskProjectId} onChange={(e) => setTaskProjectId(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" required>
+                  <select value={taskProjectId} onChange={(e) => setTaskProjectId(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" required>
                     <option value="" disabled>Select Project</option>
                     {projects.map((project: any) => (
                       <option key={project._id} value={project._id}>{project.name}</option>
@@ -496,7 +496,7 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-[#1F2937] mb-1">Priority</label>
-                  <select value={taskPriority} onChange={(e) => setTaskPriority(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none">
+                  <select value={taskPriority} onChange={(e) => setTaskPriority(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none">
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
                     <option value="High">High</option>
@@ -504,7 +504,7 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-[#1F2937] mb-1">Assign To</label>
-                  <select value={taskAssignedTo} onChange={(e) => setTaskAssignedTo(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" required>
+                  <select value={taskAssignedTo} onChange={(e) => setTaskAssignedTo(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" required>
                     {teamMembers.map((m: any) => (
                       <option key={m._id} value={m._id}>{m.name}</option>
                     ))}
@@ -513,11 +513,11 @@ export default function Dashboard() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#1F2937] mb-1">Due Date</label>
-                <input type="date" required value={taskDueDate} onChange={(e) => setTaskDueDate(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" />
+                <input type="date" required value={taskDueDate} onChange={(e) => setTaskDueDate(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" />
               </div>
               <div className="flex justify-end gap-3 mt-6">
                 <button type="button" onClick={() => setIsTaskModalOpen(false)} className="px-4 py-2 text-[#6B7280] hover:bg-[#EFE9E1] rounded-lg">Cancel</button>
-                <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white hover:bg-[#1D4ED8] rounded-lg">Create Task</button>
+                <button type="submit" className="px-4 py-2 bg-gremso text-white hover:bg-gremso-dark rounded-lg">Create Task</button>
               </div>
             </form>
           </div>
@@ -531,22 +531,22 @@ export default function Dashboard() {
             <form onSubmit={handleUploadDocument} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-[#1F2937] mb-1">Document Title</label>
-                <input type="text" required value={docTitle} onChange={(e) => setDocTitle(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" />
+                <input type="text" required value={docTitle} onChange={(e) => setDocTitle(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#1F2937] mb-1">Upload File</label>
-                <input type="file" required onChange={(e) => setDocFile(e.target.files?.[0] || null)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none" />
+                <input type="file" required onChange={(e) => setDocFile(e.target.files?.[0] || null)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-[#1F2937] mb-1">Status</label>
-                <select value={docStatus} onChange={(e) => setDocStatus(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] outline-none">
+                <select value={docStatus} onChange={(e) => setDocStatus(e.target.value)} className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso outline-none">
                   <option value="Draft">Draft</option>
                   <option value="Published">Published</option>
                 </select>
               </div>
               <div className="flex justify-end gap-3 mt-6">
                 <button type="button" onClick={() => setIsDocModalOpen(false)} className="px-4 py-2 text-[#6B7280] hover:bg-[#EFE9E1] rounded-lg">Cancel</button>
-                <button type="submit" className="px-4 py-2 bg-[#2563EB] text-white hover:bg-[#1D4ED8] rounded-lg">Upload</button>
+                <button type="submit" className="px-4 py-2 bg-gremso text-white hover:bg-gremso-dark rounded-lg">Upload</button>
               </div>
             </form>
           </div>

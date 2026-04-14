@@ -133,7 +133,7 @@ export default function Pricing() {
         <div className="mx-auto max-w-7xl">
           <section className="rounded-[32px] border border-[#E5DED6] bg-gradient-to-br from-white via-[#F9F6F1] to-[#EFE9E1] p-8 shadow-sm sm:p-12">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-[#2563EB]">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-gremso">
                 Pricing Plans
               </p>
               <h1 className="text-4xl font-bold tracking-tight text-[#1F2937] sm:text-5xl">
@@ -152,7 +152,7 @@ export default function Pricing() {
                 <button
                   type="button"
                   onClick={() => setBillingCycle((current) => (current === 'monthly' ? 'yearly' : 'monthly'))}
-                  className="relative inline-flex h-7 w-12 items-center rounded-full bg-[#2563EB] transition-colors"
+                  className="relative inline-flex h-7 w-12 items-center rounded-full bg-gremso transition-colors"
                   aria-label="Toggle billing cycle"
                 >
                   <span
@@ -218,7 +218,7 @@ export default function Pricing() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
           <div className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-[28px] border border-[#E5DED6] bg-white p-6 shadow-xl sm:p-8">
             <div className="mb-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#2563EB]">Approval Request</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gremso">Approval Request</p>
               <h2 className="mt-2 text-2xl font-bold text-[#1F2937]">Submit your onboarding details</h2>
               <p className="mt-2 text-sm text-[#6B7280]">
                 Selected plan: <span className="font-semibold text-[#1F2937]">{getPlanLabel(selectedPlanName)}</span> ({billingCycle === 'yearly' ? 'Yearly' : 'Monthly'})
@@ -232,7 +232,7 @@ export default function Pricing() {
                   type="text"
                   value={onboardingForm.name}
                   onChange={(event) => setOnboardingForm((current) => ({ ...current, name: event.target.value }))}
-                  className="w-full rounded-xl border border-[#E5DED6] px-4 py-3 outline-none transition focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-xl border border-[#E5DED6] px-4 py-3 outline-none transition focus:ring-2 focus:ring-gremso"
                   placeholder="Your full name"
                   required
                 />
@@ -244,7 +244,7 @@ export default function Pricing() {
                   type="text"
                   value={onboardingForm.phone}
                   onChange={(event) => setOnboardingForm((current) => ({ ...current, phone: event.target.value }))}
-                  className="w-full rounded-xl border border-[#E5DED6] px-4 py-3 outline-none transition focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-xl border border-[#E5DED6] px-4 py-3 outline-none transition focus:ring-2 focus:ring-gremso"
                   placeholder="Your phone number"
                   required
                 />
@@ -267,7 +267,7 @@ export default function Pricing() {
                 <textarea
                   value={onboardingForm.comment}
                   onChange={(event) => setOnboardingForm((current) => ({ ...current, comment: event.target.value }))}
-                  className="min-h-28 w-full rounded-xl border border-[#E5DED6] px-4 py-3 outline-none transition focus:ring-2 focus:ring-[#2563EB]"
+                  className="min-h-28 w-full rounded-xl border border-[#E5DED6] px-4 py-3 outline-none transition focus:ring-2 focus:ring-gremso"
                   placeholder="Tell the admin a bit about your team, use case, or onboarding needs"
                   required
                 />
@@ -284,7 +284,7 @@ export default function Pricing() {
                 <button
                   type="submit"
                   disabled={isSubmittingRequest}
-                  className="rounded-xl bg-[#2563EB] px-5 py-3 font-medium text-white transition hover:bg-[#1D4ED8] disabled:cursor-not-allowed disabled:bg-[#A5B4D4]"
+                  className="rounded-xl bg-gremso px-5 py-3 font-medium text-white transition hover:bg-gremso-dark disabled:cursor-not-allowed disabled:bg-gray-300"
                 >
                   {isSubmittingRequest ? 'Submitting...' : 'Submit for approval'}
                 </button>

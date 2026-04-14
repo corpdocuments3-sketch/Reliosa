@@ -21,7 +21,7 @@ export default function PasswordInput({ label, error, className = '', ...props }
         <input
           {...props}
           type={showPassword ? 'text' : 'password'}
-          className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2563EB] transition-colors pr-12 ${
+          className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gremso transition-colors pr-12 ${
             error ? 'border-red-500' : 'border-[#E5DED6]'
           }`}
         />

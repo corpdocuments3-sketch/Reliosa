@@ -33,7 +33,7 @@ export default function PlanSelectionCard({
     <article
       className={`relative rounded-2xl border p-8 transition-all ${
         isSelected
-          ? 'border-[#2563EB] bg-white shadow-xl shadow-blue-100/60'
+          ? 'border-gremso bg-white shadow-xl shadow-gremso/15'
           : 'border-[#E5DED6] bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg'
       }`}
     >
@@ -63,7 +63,7 @@ export default function PlanSelectionCard({
         disabled={isLoading}
         className={`mb-6 w-full rounded-lg px-6 py-3 text-sm font-medium transition-colors ${
           isSelected || isCurrent
-            ? 'bg-[#2563EB] text-white hover:bg-[#1D4ED8]'
+            ? 'bg-gremso text-white hover:bg-gremso-dark'
             : 'bg-[#F6F3EE] text-[#1F2937] hover:bg-[#EFE9E1]'
         } ${isLoading ? 'cursor-not-allowed opacity-60' : ''}`}
       >

@@ -90,7 +90,7 @@ export default function Header({ onOpenSidebar }: HeaderProps) {
             <div className="flex items-center justify-between gap-3 border-b border-[#E5DED6] bg-[#F6F3EE] p-4">
               <h3 className="min-w-0 font-semibold text-[#1F2937]">Notifications</h3>
               {unreadCount > 0 && (
-                <button onClick={markAllRead} className="flex shrink-0 items-center text-xs text-[#2563EB] hover:underline">
+                <button onClick={markAllRead} className="flex shrink-0 items-center text-xs text-gremso hover:underline">
                   <Check className="w-3 h-3 mr-1" /> Mark all read
                 </button>
               )}
@@ -101,7 +101,7 @@ export default function Header({ onOpenSidebar }: HeaderProps) {
                 <div className="p-6 text-center text-[#6B7280] text-sm">No new notifications</div>
               ) : (
                 notifications.map(notif => (
-                  <div key={notif._id} className={`p-4 border-b border-[#E5DED6] hover:bg-[#F6F3EE] transition-colors cursor-pointer ${notif.read ? 'opacity-70' : 'bg-blue-50/30'}`}>
+                  <div key={notif._id} className={`p-4 border-b border-[#E5DED6] hover:bg-[#F6F3EE] transition-colors cursor-pointer ${notif.read ? 'opacity-70' : 'bg-gremso-soft/30'}`}>
                     <div className="flex justify-between items-start mb-1">
                       <h4 className="font-semibold text-sm text-[#1F2937]">{notif.title}</h4>
                     </div>

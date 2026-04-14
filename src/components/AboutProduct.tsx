@@ -98,7 +98,7 @@ export default function AboutProduct() {
             </p>
             <div className="mt-12 p-8 bg-gray-50 rounded-2xl border border-gray-100 text-left">
               <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <Target className="w-6 h-6 text-indigo-600" />
+                <Target className="w-6 h-6 text-gremso" />
                 The Problem It Solves
               </h3>
               <p className="text-gray-500">
@@ -122,7 +122,7 @@ export default function AboutProduct() {
             <div className="space-y-12">
               {steps.map((step) => (
                 <div key={step.id} className="relative flex items-start group">
-                  <div className="h-16 w-16 rounded-2xl bg-white border-2 border-gray-200 flex items-center justify-center flex-shrink-0 z-10 md:ml-0 shadow-sm group-hover:border-indigo-600 transition-colors duration-200">
+                  <div className="h-16 w-16 rounded-2xl bg-white border-2 border-gray-200 flex items-center justify-center flex-shrink-0 z-10 md:ml-0 shadow-sm group-hover:border-gremso transition-colors duration-200">
                     <span className="text-xl font-bold text-gray-800">{step.id}</span>
                   </div>
                   <div className="ml-6 pt-3">
@@ -146,7 +146,7 @@ export default function AboutProduct() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature) => (
               <div key={feature.name} className="p-8 rounded-2xl border border-gray-100 bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-indigo-600 flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-xl bg-gremso flex items-center justify-center mb-6">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.name}</h3>
@@ -158,18 +158,23 @@ export default function AboutProduct() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-indigo-600 text-white">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gremso text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Who Can Use This Space?</h2>
-            <p className="text-xl text-gray-400">Built for teams of all shapes and sizes.</p>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+              Built for teams of all shapes and sizes.
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {useCases.map((useCase) => (
-              <div key={useCase.title} className="p-6 rounded-2xl bg-gray-800 border border-gray-700">
-                <useCase.icon className="w-8 h-8 text-indigo-400 mb-4" />
-                <h3 className="text-lg font-bold text-white mb-2">{useCase.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{useCase.description}</p>
+              <div
+                key={useCase.title}
+                className="p-6 rounded-2xl bg-gremso-soft border border-white/40 shadow-lg shadow-gremso-dark/10 transition-shadow duration-200 hover:shadow-xl"
+              >
+                <useCase.icon className="w-8 h-8 text-gremso-dark mb-4" />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{useCase.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{useCase.description}</p>
               </div>
             ))}
           </div>
@@ -182,35 +187,35 @@ export default function AboutProduct() {
           <h2 className="text-3xl font-bold text-gray-800 mb-12">Why Choose This Platform?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 text-left">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">✓</div>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gremso-soft flex items-center justify-center text-gremso font-bold">✓</div>
               <div>
                 <h4 className="text-lg font-bold text-gray-800 mb-2">All tools in one place</h4>
                 <p className="text-gray-500 rounded">Eliminate the need to jump between multiple disjointed apps.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">✓</div>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gremso-soft flex items-center justify-center text-gremso font-bold">✓</div>
               <div>
                 <h4 className="text-lg font-bold text-gray-800 mb-2">Better productivity</h4>
                 <p className="text-gray-500">Streamlined workflows mean faster execution and less friction.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">✓</div>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gremso-soft flex items-center justify-center text-gremso font-bold">✓</div>
               <div>
                 <h4 className="text-lg font-bold text-gray-800 mb-2">Organized workflows</h4>
                 <p className="text-gray-500">Customizable boards and docs adapt naturally to how you work.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">✓</div>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gremso-soft flex items-center justify-center text-gremso font-bold">✓</div>
               <div>
                 <h4 className="text-lg font-bold text-gray-800 mb-2">Easy collaboration</h4>
                 <p className="text-gray-500">Built-in commenting, assigning, and real-time multiplayer editing.</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">✓</div>
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gremso-soft flex items-center justify-center text-gremso font-bold">✓</div>
               <div>
                 <h4 className="text-lg font-bold text-gray-800 mb-2">Accessible anywhere</h4>
                 <p className="text-gray-500">Fully cloud-native, ensuring your workspace is always within reach.</p>

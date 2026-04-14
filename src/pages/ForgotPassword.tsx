@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
-import { Hammer, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
+import gremsoLogo from '../assets/gremso-logo.png';
 import { sendPasswordResetEmail } from 'firebase/auth';
 import { auth } from '../firebase';
 import toast from 'react-hot-toast';
@@ -42,9 +43,13 @@ export default function ForgotPassword() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center">
-              <Hammer className="w-7 h-7 text-white" />
-            </div>
+            <img
+              src={gremsoLogo}
+              alt="Gremso"
+              className="h-12 w-12 object-contain"
+              width={48}
+              height={48}
+            />
           </Link>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Reset Password</h2>
           <p className="text-gray-500">Enter your email to receive a reset link</p>
@@ -56,7 +61,7 @@ export default function ForgotPassword() {
               <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 font-medium">
                 Password reset link has been sent to your email. Please check your inbox.
               </div>
-              <Link to="/login" className="w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white bg-indigo-600 hover:bg-indigo-700 transition-colors">
+              <Link to="/login" className="w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white bg-gremso hover:bg-gremso-dark transition-colors">
                 Return to Login
               </Link>
             </div>
@@ -69,7 +74,7 @@ export default function ForgotPassword() {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:border-indigo-600 focus:ring-indigo-600 transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:border-gremso focus:ring-gremso transition-colors"
                   placeholder="you@example.com"
                 />
               </div>
@@ -78,7 +83,7 @@ export default function ForgotPassword() {
                 type="submit"
                 disabled={isLoading || !email}
                 className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white transition-colors ${
-                  isLoading || !email ? 'bg-gray-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700'
+                  isLoading || !email ? 'bg-gray-400 cursor-not-allowed' : 'bg-gremso hover:bg-gremso-dark'
                 }`}
               >
                 {isLoading && <Loader2 className="w-5 h-5 mr-2 animate-spin" />}

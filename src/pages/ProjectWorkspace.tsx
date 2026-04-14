@@ -79,7 +79,7 @@ export default function ProjectWorkspace() {
                 }}
                 className={`w-full rounded-full border-none bg-no-repeat px-4 py-2 pr-8 text-sm font-medium outline-none appearance-none cursor-pointer sm:w-auto ${
                   project.status === 'Completed' ? 'bg-green-100 text-green-800 hover:bg-green-200' :
-                  project.status === 'In Progress' ? 'bg-blue-100 text-blue-800 hover:bg-blue-200' :
+                  project.status === 'In Progress' ? 'bg-gremso-soft text-gremso-dark hover:bg-cyan-100' :
                   'bg-yellow-100 text-yellow-800 hover:bg-yellow-200'
                 }`}
                 style={{
@@ -103,7 +103,7 @@ export default function ProjectWorkspace() {
                   to={tab.path}
                   className={`py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors ${
                     isActiveTab(tab.path) || (currentTab === id && tab.name === 'Tasks') // Default to tasks
-                      ? 'border-[#2563EB] text-[#2563EB]'
+                      ? 'border-gremso text-gremso'
                       : 'border-transparent text-[#6B7280] hover:text-[#1F2937] hover:border-[#E5DED6]'
                   }`}
                 >

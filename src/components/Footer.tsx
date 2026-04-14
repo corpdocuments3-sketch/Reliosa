@@ -1,26 +1,33 @@
-import { Link } from 'react-router-dom';
-import { Hammer, Mail } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
+import gremsoLogo from "../assets/gremso-logo.png";
 
 export default function Footer() {
+  const linkHover = "hover:text-gremso-dark";
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-                <Hammer className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src={gremsoLogo}
+                alt="Gremso"
+                className="h-12 w-12 object-contain shrink-0"
+                width={48}
+                height={48}
+              />
               <span className="text-xl font-bold text-gray-800 tracking-tight">
-                Gremso
+                GREMSO
               </span>
             </div>
             <p className="text-base text-gray-500 mb-8 max-w-sm leading-relaxed">
-              The modern workspace for construction teams to organize documents, manage projects, and collaborate.
+              The modern workspace for construction teams to organize documents,
+              manage projects, and collaborate.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 text-base text-gray-500 hover:text-gray-800 transition-colors"
+              className={`inline-flex items-center gap-2 text-base text-gray-500 transition-colors ${linkHover}`}
             >
               <Mail className="w-5 h-5 shrink-0" />
               Contact us
@@ -35,7 +42,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/features"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Features
                 </Link>
@@ -43,7 +50,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/pricing"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Pricing
                 </Link>
@@ -59,7 +66,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/about"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   About
                 </Link>
@@ -67,7 +74,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/careers"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Careers
                 </Link>
@@ -83,7 +90,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/blog"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Blog
                 </Link>
@@ -91,7 +98,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/help"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Help Center
                 </Link>
@@ -107,7 +114,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/terms"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Terms & Conditions
                 </Link>
@@ -115,7 +122,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/privacy"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Privacy Policy
                 </Link>
@@ -123,7 +130,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/refund"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Refund Policy
                 </Link>
@@ -131,7 +138,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/cookies"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Cookie Policy
                 </Link>
@@ -139,7 +146,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/security"
-                  className="text-base text-gray-500 hover:text-gray-800 transition-colors"
+                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >
                   Security
                 </Link>
@@ -154,8 +161,11 @@ export default function Footer() {
               Gremso is operated by Babu Lal Gurjar.
             </p>
             <p className="text-sm text-gray-500 text-center">
-              Questions?{' '}
-              <Link to="/contact" className="text-gray-700 hover:text-gray-900 underline">
+              Questions?{" "}
+              <Link
+                to="/contact"
+                className="text-gremso-dark hover:text-gremso underline"
+              >
                 Get in touch
               </Link>
               .

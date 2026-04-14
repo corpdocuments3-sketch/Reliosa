@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
-import { Hammer, Loader2, CheckCircle, XCircle } from 'lucide-react';
+import { Loader2, CheckCircle, XCircle } from 'lucide-react';
+import gremsoLogo from '../assets/gremso-logo.png';
 import api from '../lib/api';
 
 export default function VerifyEmail() {
@@ -35,9 +36,13 @@ export default function VerifyEmail() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center">
-              <Hammer className="w-7 h-7 text-white" />
-            </div>
+            <img
+              src={gremsoLogo}
+              alt="Gremso"
+              className="h-12 w-12 object-contain"
+              width={48}
+              height={48}
+            />
           </Link>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">
             Email Verification
@@ -59,7 +64,7 @@ export default function VerifyEmail() {
               <p className="text-gray-500 mb-6">{message}</p>
               <Link
                 to="/login"
-                className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
+                className="w-full bg-gremso text-white px-6 py-3 rounded-lg font-medium hover:bg-gremso-dark transition-colors"
                 style={{ display: 'block' }}
               >
                 Go to Login

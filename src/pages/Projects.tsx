@@ -69,7 +69,7 @@ export default function Projects() {
         </div>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="flex w-full items-center justify-center space-x-2 rounded-lg bg-[#2563EB] px-4 py-2 text-white transition-colors hover:bg-[#1D4ED8] sm:w-auto"
+          className="flex w-full items-center justify-center space-x-2 rounded-lg bg-gremso px-4 py-2 text-white transition-colors hover:bg-gremso-dark sm:w-auto"
         >
           <Plus className="w-5 h-5" />
           <span>New Project</span>
@@ -88,11 +88,11 @@ export default function Projects() {
             >
               <div className="mb-4 flex items-start justify-between gap-3">
                 <div className="rounded-lg bg-[#EFE9E1] p-3">
-                  <Folder className="w-6 h-6 text-[#2563EB]" />
+                  <Folder className="w-6 h-6 text-gremso" />
                 </div>
                 <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium ${
                   project.status === 'Completed' ? 'bg-green-100 text-green-800' :
-                  project.status === 'In Progress' ? 'bg-blue-100 text-blue-800' :
+                  project.status === 'In Progress' ? 'bg-gremso-soft text-gremso-dark' :
                   'bg-yellow-100 text-yellow-800'
                 }`}>
                   {project.status}
@@ -139,7 +139,7 @@ export default function Projects() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="e.g. Downtown Scaffold Tower"
                 />
               </div>
@@ -150,7 +150,7 @@ export default function Projects() {
                   required
                   value={formData.clientName}
                   onChange={(e) => setFormData({ ...formData, clientName: e.target.value })}
-                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="Client or Company Name"
                 />
               </div>
@@ -161,7 +161,7 @@ export default function Projects() {
                   required
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="Site Location"
                 />
               </div>
@@ -173,7 +173,7 @@ export default function Projects() {
                     required
                     value={formData.startDate}
                     onChange={(e) => setFormData({ ...formData, startDate: e.target.value })}
-                    className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                    className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   />
                 </div>
                 <div>
@@ -183,7 +183,7 @@ export default function Projects() {
                     required
                     value={formData.endDate}
                     onChange={(e) => setFormData({ ...formData, endDate: e.target.value })}
-                    className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                    className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   />
                 </div>
               </div>
@@ -192,7 +192,7 @@ export default function Projects() {
                 <select
                   value={formData.status}
                   onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                 >
                   <option value="Planning">Planning</option>
                   <option value="In Progress">In Progress</option>
@@ -210,7 +210,7 @@ export default function Projects() {
                 </button>
                 <button
                   type="submit"
-                  className="rounded-lg bg-[#2563EB] px-4 py-2 font-medium text-white hover:bg-[#1D4ED8]"
+                  className="rounded-lg bg-gremso px-4 py-2 font-medium text-white hover:bg-gremso-dark"
                 >
                   Create Project
                 </button>

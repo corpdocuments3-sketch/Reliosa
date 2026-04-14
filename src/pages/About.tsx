@@ -60,7 +60,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-8 bg-white rounded-xl border border-gray-200">
-              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-gremso rounded-lg flex items-center justify-center mb-6">
                 <Target className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -74,7 +74,7 @@ export default function About() {
             </div>
 
             <div className="p-8 bg-white rounded-xl border border-gray-200">
-              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-gremso rounded-lg flex items-center justify-center mb-6">
                 <Eye className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -100,7 +100,7 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div>
-              <div className="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gremso rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
@@ -112,7 +112,7 @@ export default function About() {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gremso rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
@@ -125,7 +125,7 @@ export default function About() {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gremso rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Target className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
@@ -139,14 +139,14 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-indigo-600">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gremso">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Join our community
           </h2>
-          <p className="text-xl text-gray-300 mb-10">
+          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
             Become part of a growing group of construction professionals using{' '}
-            <strong className="text-white">Gremso</strong> to run their projects.
+            <strong className="font-bold text-white">Gremso</strong> to run their projects.
           </p>
           <Link
             to="/signup"

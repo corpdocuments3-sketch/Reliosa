@@ -115,7 +115,7 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-colors ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gremso transition-colors ${
                         errors.name ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="Your name"
@@ -138,7 +138,7 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-colors ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gremso transition-colors ${
                         errors.email ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="you@example.com"
@@ -163,7 +163,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-colors resize-none ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gremso transition-colors resize-none ${
                         errors.message ? 'border-red-500' : 'border-gray-300'
                       }`}
                       placeholder="Tell us about your project..."
@@ -177,7 +177,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors flex items-center justify-center"
+                    className="w-full bg-gremso text-white px-6 py-3 rounded-lg font-medium hover:bg-gremso-dark transition-colors flex items-center justify-center"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Send Message

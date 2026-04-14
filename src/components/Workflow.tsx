@@ -22,6 +22,9 @@ const steps = [
 ];
 
 export default function Workflow() {
+  const badgeBg = 'bg-gremso';
+  const titleHover = 'hover:text-gremso';
+
   return (
     <div className="py-24 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,11 +50,15 @@ export default function Workflow() {
               <div key={step.id} className="relative text-center">
                 <div className="flex items-center justify-center w-24 h-24 mx-auto bg-white border-4 border-gray-50 rounded-full shadow-lg mb-8 relative z-10">
                   <step.icon className="w-10 h-10 text-gray-800" />
-                  <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold shadow-md">
+                  <div
+                    className={`absolute -top-3 -right-3 w-8 h-8 rounded-full ${badgeBg} text-white flex items-center justify-center font-bold shadow-md`}
+                  >
                     {step.id}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4 cursor-pointer hover:text-indigo-600 transition-colors">
+                <h3
+                  className={`text-xl font-bold text-gray-800 mb-4 cursor-pointer transition-colors ${titleHover}`}
+                >
                   {step.name}
                 </h3>
                 <p className="text-gray-500 leading-relaxed px-4">

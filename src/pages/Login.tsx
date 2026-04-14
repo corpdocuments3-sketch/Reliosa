@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { Hammer, Eye, EyeOff, Loader2 } from 'lucide-react';
+import { Eye, EyeOff, Loader2 } from 'lucide-react';
+import gremsoLogo from '../assets/gremso-logo.png';
 
 import toast from 'react-hot-toast';
 import { usePlan } from '../context/PlanContext';
@@ -133,7 +134,7 @@ export default function Login() {
   };
 
   const getInputStatusClass = (value: string, error: string) => {
-    if (!value) return 'border-[#E5DED6] focus:border-[#2563EB] ring-[#2563EB]';
+    if (!value) return 'border-[#E5DED6] focus:border-gremso ring-gremso';
     if (error) return 'border-red-500 focus:border-red-500 ring-red-500';
     return 'border-green-500 focus:border-green-500 ring-green-500';
   };
@@ -143,9 +144,13 @@ export default function Login() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 bg-[#2563EB] rounded-xl flex items-center justify-center">
-              <Hammer className="w-7 h-7 text-white" />
-            </div>
+            <img
+              src={gremsoLogo}
+              alt="Gremso"
+              className="h-12 w-12 object-contain"
+              width={48}
+              height={48}
+            />
           </Link>
           <h2 className="text-3xl font-bold text-[#1F2937] mb-2">
             Welcome back
@@ -171,7 +176,7 @@ export default function Login() {
                 type="button"
                 onClick={handleResendRequest}
                 disabled={isResendingRequest}
-                className="mt-3 inline-flex items-center justify-center rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8] disabled:cursor-not-allowed disabled:bg-[#A5B4D4]"
+                className="mt-3 inline-flex items-center justify-center rounded-lg bg-gremso px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gremso-dark disabled:cursor-not-allowed disabled:bg-gray-300"
               >
                 {isResendingRequest ? 'Sending...' : 'Resend Request'}
               </button>
@@ -218,7 +223,7 @@ export default function Login() {
                   onChange={(e) =>
                     setFormData({ ...formData, password: e.target.value })
                   }
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-1 pr-12 transition-colors ${formData.password ? 'border-green-500 focus:border-green-500 ring-green-500' : 'border-[#E5DED6] focus:border-[#2563EB] ring-[#2563EB]'}`}
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-1 pr-12 transition-colors ${formData.password ? 'border-green-500 focus:border-green-500 ring-green-500' : 'border-[#E5DED6] focus:border-gremso ring-gremso'}`}
                   placeholder="Enter your password"
                 />
                 <button
@@ -240,7 +245,7 @@ export default function Login() {
                   onChange={(e) =>
                     setFormData({ ...formData, remember: e.target.checked })
                   }
-                  className="w-4 h-4 text-[#2563EB] border-[#E5DED6] rounded focus:ring-[#2563EB]"
+                  className="w-4 h-4 text-gremso border-[#E5DED6] rounded focus:ring-gremso"
                 />
                 <label
                   htmlFor="remember"
@@ -252,7 +257,7 @@ export default function Login() {
 
               <Link
                 to="/forgot-password"
-                className="text-sm font-medium text-[#1F2937] hover:text-[#2563EB] transition-colors"
+                className="text-sm font-medium text-[#1F2937] hover:text-gremso transition-colors"
               >
                 Forgot password?
               </Link>
@@ -262,7 +267,7 @@ export default function Login() {
               type="submit"
               disabled={isLoading || !isFormValid}
               className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white transition-colors ${
-                isLoading || !isFormValid ? 'bg-[#E5DED6] cursor-not-allowed text-[#6B7280]' : 'bg-[#2563EB] hover:bg-[#1D4ED8] shadow-sm'
+                isLoading || !isFormValid ? 'bg-[#E5DED6] cursor-not-allowed text-[#6B7280]' : 'bg-gremso hover:bg-gremso-dark shadow-sm'
               }`}
             >
               {isLoading && <Loader2 className="w-5 h-5 mr-2 animate-spin" />}
@@ -275,7 +280,7 @@ export default function Login() {
               Don't have an account?{' '}
               <Link
                 to={inviteToken ? `/signup?inviteToken=${encodeURIComponent(inviteToken)}` : '/signup'}
-                className="font-medium text-[#1F2937] hover:text-[#2563EB] transition-colors"
+                className="font-medium text-[#1F2937] hover:text-gremso transition-colors"
               >
                 Sign up
               </Link>

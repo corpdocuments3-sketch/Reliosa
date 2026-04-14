@@ -245,7 +245,7 @@ export default function Team() {
         ) : (
           <button
             onClick={() => setIsModalOpen(true)}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2 text-white shadow-sm transition-colors hover:bg-[#1D4ED8] sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gremso px-4 py-2 text-white shadow-sm transition-colors hover:bg-gremso-dark sm:w-auto"
           >
             <Plus className="h-5 w-5" /> Invite Member
           </button>
@@ -284,7 +284,7 @@ export default function Team() {
                     <tr key={member._id} className="transition-colors hover:bg-[#F6F3EE]">
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB] font-bold text-white">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gremso font-bold text-white">
                             {member.name.charAt(0)}
                           </div>
                           <div>
@@ -324,7 +324,7 @@ export default function Team() {
                 <div key={member._id} className="rounded-xl border border-[#E5DED6] p-4">
                   <div className="mb-4 flex items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB] font-bold text-white">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gremso font-bold text-white">
                         {member.name.charAt(0)}
                       </div>
                       <div>
@@ -376,7 +376,7 @@ export default function Team() {
                   required
                   value={newName}
                   onChange={(e) => setNewName(e.target.value)}
-                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="e.g. Rachel Adams"
                 />
               </div>
@@ -387,7 +387,7 @@ export default function Team() {
                   required
                   value={newEmail}
                   onChange={(e) => setNewEmail(e.target.value)}
-                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="rachel@example.com"
                 />
               </div>
@@ -397,7 +397,7 @@ export default function Team() {
                   type="text"
                   value={newPhone}
                   onChange={(e) => setNewPhone(e.target.value)}
-                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-[#2563EB]"
+                  className="w-full rounded-lg border border-[#E5DED6] px-4 py-2 outline-none focus:ring-2 focus:ring-gremso"
                   placeholder="Optional"
                 />
               </div>
@@ -412,7 +412,7 @@ export default function Team() {
                 <button
                   type="submit"
                   disabled={teamLimitReached}
-                  className="rounded-lg bg-[#2563EB] px-4 py-2 text-white transition-colors hover:bg-[#1D4ED8] disabled:opacity-50"
+                  className="rounded-lg bg-gremso px-4 py-2 text-white transition-colors hover:bg-gremso-dark disabled:opacity-50"
                 >
                   Save Member
                 </button>

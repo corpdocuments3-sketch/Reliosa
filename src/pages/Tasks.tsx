@@ -231,7 +231,7 @@ export default function Tasks() {
 
     const colors: Record<string, string> = {
       'pending': 'bg-gray-50 text-gray-700 ring-1 ring-gray-600/20',
-      'in-progress': 'bg-blue-50 text-blue-700 ring-1 ring-blue-600/20',
+      'in-progress': 'bg-gremso-soft text-gremso-dark ring-1 ring-gremso/20',
       'completed': 'bg-green-50 text-green-700 ring-1 ring-green-600/20',
     };
     const labels: Record<string, string> = {
@@ -265,7 +265,7 @@ export default function Tasks() {
             {isManager && (
               <button
                 onClick={() => setIsCreateModalOpen(true)}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2 text-white shadow-sm transition-colors hover:bg-[#1D4ED8] sm:w-auto"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-gremso px-4 py-2 text-white shadow-sm transition-colors hover:bg-gremso-dark sm:w-auto"
               >
                 <Plus className="w-5 h-5" /> New Task
               </button>
@@ -281,7 +281,7 @@ export default function Tasks() {
                 onClick={() => setFilter(f)}
                 className={`py-2 px-4 text-sm font-medium border-b-2 transition-colors ${
                   filter === f
-                    ? 'border-[#2563EB] text-[#1F2937]'
+                    ? 'border-gremso text-[#1F2937]'
                     : 'border-transparent text-[#6B7280] hover:text-[#1F2937] hover:border-[#E5DED6]'
                 }`}
               >
@@ -367,7 +367,7 @@ export default function Tasks() {
                           <div className="flex justify-end gap-2">
                             <button
                               onClick={(e) => handleOpenEditModal(task, e)}
-                              className="p-2 text-[#2563EB] hover:text-[#1D4ED8] rounded-lg hover:bg-blue-50 transition-colors"
+                              className="p-2 text-gremso hover:text-gremso-dark rounded-lg hover:bg-gremso-soft transition-colors"
                             >
                               <Pencil className="w-5 h-5" />
                             </button>
@@ -424,7 +424,7 @@ export default function Tasks() {
                         selectedTask.status
                       }
                       onChange={(e) => handleStatusUpdate(selectedTask._id, e.target.value)}
-                      className="ml-2 text-sm border-[#E5DED6] rounded-md shadow-sm focus:border-[#2563EB] focus:ring-[#2563EB] bg-[#F6F3EE] px-2 py-1 text-[#1F2937]"
+                      className="ml-2 text-sm border-[#E5DED6] rounded-md shadow-sm focus:border-gremso focus:ring-gremso bg-[#F6F3EE] px-2 py-1 text-[#1F2937]"
                     >
                       <option value="pending">Pending</option>
                       <option value="in-progress">In Progress</option>
@@ -454,7 +454,7 @@ export default function Tasks() {
                       <span className="text-xs font-medium text-[#1F2937]">{msg.senderId?.name || 'Unknown'}</span>
                       <span className="text-[10px] text-[#6B7280]">{new Date(msg.createdAt).toLocaleTimeString()}</span>
                     </div>
-                    <div className={`px-4 py-2 rounded-2xl max-w-md ${msg.senderId?._id === user?.id ? 'bg-[#2563EB] text-white rounded-tr-none' : 'bg-white border text-[#1F2937] rounded-tl-none border-[#E5DED6]'}`}>
+                    <div className={`px-4 py-2 rounded-2xl max-w-md ${msg.senderId?._id === user?.id ? 'bg-gremso text-white rounded-tr-none' : 'bg-white border text-[#1F2937] rounded-tl-none border-[#E5DED6]'}`}>
                       {msg.message}
                     </div>
                   </div>
@@ -469,12 +469,12 @@ export default function Tasks() {
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
                   placeholder="Type a message..."
-                  className="flex-1 px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="flex-1 px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                 />
                 <button
                   type="submit"
                   disabled={!newMessage.trim()}
-                  className="px-4 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+                  className="px-4 py-2 bg-gremso text-white rounded-lg hover:bg-gremso-dark disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                 </button>
@@ -497,7 +497,7 @@ export default function Tasks() {
                   required
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   placeholder="e.g. Audit scaffold base"
                 />
               </div>
@@ -506,7 +506,7 @@ export default function Tasks() {
                 <textarea
                   value={newDescription}
                   onChange={(e) => setNewDescription(e.target.value)}
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   placeholder="Additional details..."
                   rows={3}
                 />
@@ -518,7 +518,7 @@ export default function Tasks() {
                     required
                     value={newProjectId}
                     onChange={(e) => setNewProjectId(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   >
                     <option value="" disabled>Select Project</option>
                     {projects.map((project) => (
@@ -532,7 +532,7 @@ export default function Tasks() {
                     required
                     value={newAssignedTo}
                     onChange={(e) => setNewAssignedTo(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   >
                     <option value="" disabled>Select Member</option>
                     {teamMembers.map(m => (
@@ -547,7 +547,7 @@ export default function Tasks() {
                     required
                     value={newDueDate}
                     onChange={(e) => setNewDueDate(e.target.value)}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   />
                 </div>
               </div>
@@ -556,7 +556,7 @@ export default function Tasks() {
                 <select
                   value={newPriority}
                   onChange={(e) => setNewPriority(e.target.value)}
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                 >
                   <option value="Low">Low</option>
                   <option value="Medium">Medium</option>
@@ -573,7 +573,7 @@ export default function Tasks() {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors"
+                  className="px-4 py-2 bg-gremso text-white rounded-lg hover:bg-gremso-dark transition-colors"
                 >
                   Save Task
                 </button>
@@ -595,7 +595,7 @@ export default function Tasks() {
                   required
                   value={editFormData.title}
                   onChange={(e) => setEditFormData({ ...editFormData, title: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                 />
               </div>
               <div>
@@ -603,7 +603,7 @@ export default function Tasks() {
                 <textarea
                   value={editFormData.description}
                   onChange={(e) => setEditFormData({ ...editFormData, description: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   rows={3}
                 />
               </div>
@@ -614,7 +614,7 @@ export default function Tasks() {
                     required
                     value={editFormData.projectId}
                     onChange={(e) => setEditFormData({ ...editFormData, projectId: e.target.value })}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   >
                     <option value="" disabled>Select Project</option>
                     {projects.map((project) => (
@@ -628,7 +628,7 @@ export default function Tasks() {
                     required
                     value={editFormData.assignedTo}
                     onChange={(e) => setEditFormData({ ...editFormData, assignedTo: e.target.value })}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   >
                     <option value="" disabled>Select Member</option>
                     {teamMembers.map((member) => (
@@ -641,7 +641,7 @@ export default function Tasks() {
                   <select
                     value={editFormData.priority}
                     onChange={(e) => setEditFormData({ ...editFormData, priority: e.target.value })}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   >
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
@@ -653,7 +653,7 @@ export default function Tasks() {
                   <select
                     value={editFormData.status}
                     onChange={(e) => setEditFormData({ ...editFormData, status: e.target.value })}
-                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                    className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                   >
                     <option value="pending">Pending</option>
                     <option value="in-progress">In Progress</option>
@@ -668,7 +668,7 @@ export default function Tasks() {
                   required
                   value={editFormData.dueDate}
                   onChange={(e) => setEditFormData({ ...editFormData, dueDate: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:border-[#2563EB] outline-none"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg focus:ring-2 focus:ring-gremso focus:border-gremso outline-none"
                 />
               </div>
               <div className="flex justify-end gap-3 mt-6">
@@ -681,7 +681,7 @@ export default function Tasks() {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#1D4ED8] transition-colors"
+                  className="px-4 py-2 bg-gremso text-white rounded-lg hover:bg-gremso-dark transition-colors"
                 >
                   Save Changes
                 </button>

@@ -45,17 +45,17 @@ export default function ProjectTimeline({ projectId }: { projectId: string }) {
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 sm:p-6">
-        <div className="relative ml-3 space-y-8 border-l-2 border-[#2563EB] py-4 sm:ml-4">
+        <div className="relative ml-3 space-y-8 border-l-2 border-gremso py-4 sm:ml-4">
           
           {/* Project Start */}
           <div className="relative">
-            <div className="absolute -left-[19px] mt-1 flex h-9 w-9 items-center justify-center rounded-full border-4 border-white bg-[#2563EB] sm:-left-[25px] sm:h-12 sm:w-12">
+            <div className="absolute -left-[19px] mt-1 flex h-9 w-9 items-center justify-center rounded-full border-4 border-white bg-gremso sm:-left-[25px] sm:h-12 sm:w-12">
                <Flag className="w-5 h-5 text-white" />
             </div>
             <div className="ml-7 rounded-xl border border-[#E5DED6] bg-[#EFE9E1] p-4 sm:ml-10">
               <h3 className="font-bold text-[#1F2937]">Project Start Phase</h3>
               <p className="text-sm text-[#6B7280] mt-1">{project.name}</p>
-              <div className="flex items-center mt-3 text-xs font-semibold text-[#2563EB]">
+              <div className="flex items-center mt-3 text-xs font-semibold text-gremso">
                 <CalendarIcon className="w-4 h-4 mr-1" />
                 {new Date(project.startDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
               </div>
@@ -94,13 +94,13 @@ export default function ProjectTimeline({ projectId }: { projectId: string }) {
 
           {/* Project End */}
           <div className="relative">
-            <div className="absolute -left-[19px] mt-1 flex h-9 w-9 items-center justify-center rounded-full border-4 border-white bg-[#2563EB] sm:-left-[25px] sm:h-12 sm:w-12">
+            <div className="absolute -left-[19px] mt-1 flex h-9 w-9 items-center justify-center rounded-full border-4 border-white bg-gremso sm:-left-[25px] sm:h-12 sm:w-12">
                <Flag className="w-5 h-5 text-white" />
             </div>
             <div className="ml-7 rounded-xl border border-[#E5DED6] bg-[#EFE9E1] p-4 sm:ml-10">
               <h3 className="font-bold text-[#1F2937]">Target Delivery / End Date</h3>
               <p className="text-sm text-[#6B7280] mt-1">{project.name} Completion</p>
-              <div className="flex items-center mt-3 text-xs font-semibold text-[#2563EB]">
+              <div className="flex items-center mt-3 text-xs font-semibold text-gremso">
                 <CalendarIcon className="w-4 h-4 mr-1" />
                 {new Date(project.endDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
               </div>

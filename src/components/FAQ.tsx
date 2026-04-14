@@ -26,6 +26,7 @@ const faqs = [
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const focusRing = 'focus-visible:ring-gremso';
 
   const toggleFAQ = (index: number) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -49,7 +50,7 @@ export default function FAQ() {
               className="bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-200"
             >
               <button
-                className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50"
+                className={`w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus-visible:ring-2 ${focusRing} focus-visible:ring-opacity-50`}
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openIndex === index}
               >

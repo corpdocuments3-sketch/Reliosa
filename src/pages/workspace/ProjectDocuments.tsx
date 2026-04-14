@@ -126,7 +126,7 @@ export default function ProjectDocuments({ projectId }: { projectId: string }) {
             />
             <label 
               htmlFor="doc-upload" 
-              className={`flex cursor-pointer items-center justify-center space-x-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${isUploading ? 'bg-gray-300 text-gray-500' : 'bg-[#2563EB] text-white hover:bg-[#1D4ED8]'}`}
+              className={`flex cursor-pointer items-center justify-center space-x-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${isUploading ? 'bg-gray-300 text-gray-500' : 'bg-gremso text-white hover:bg-gremso-dark'}`}
             >
               <Upload className="w-4 h-4" />
               <span>{isUploading ? 'Uploading...' : 'Upload Document'}</span>
@@ -150,13 +150,13 @@ export default function ProjectDocuments({ projectId }: { projectId: string }) {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center space-x-3 max-w-[80%]">
                     <div className="bg-[#EFE9E1] p-2 rounded-lg shrink-0">
-                      <FileText className="w-6 h-6 text-[#2563EB]" />
+                      <FileText className="w-6 h-6 text-gremso" />
                     </div>
                     <a 
                       href={doc.fileUrl?.startsWith('http') ? doc.fileUrl : `${fileBaseUrl}${doc.fileUrl}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-sm font-semibold text-[#1F2937] hover:text-[#2563EB] hover:underline truncate"
+                      className="text-sm font-semibold text-[#1F2937] hover:text-gremso hover:underline truncate"
                       title={doc.title}
                     >
                       {doc.title}

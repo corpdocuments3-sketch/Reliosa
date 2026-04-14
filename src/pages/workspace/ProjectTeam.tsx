@@ -78,7 +78,7 @@ export default function ProjectTeam({ projectId }: { projectId: string }) {
     switch(role) {
       case 'Admin': return 'bg-purple-100 text-purple-700 ring-1 ring-purple-600/20';
       case 'Manager': 
-      case 'manager': return 'bg-blue-100 text-blue-700 ring-1 ring-blue-600/20';
+      case 'manager': return 'bg-gremso-soft text-gremso-dark ring-1 ring-gremso/20';
       case 'Supervisor': return 'bg-green-100 text-green-700 ring-1 ring-green-600/20';
       default: return 'bg-gray-100 text-gray-700 ring-1 ring-gray-600/20';
     }
@@ -109,7 +109,7 @@ export default function ProjectTeam({ projectId }: { projectId: string }) {
               setIsAddModalOpen(true);
               setMemberSearch('');
             }}
-            className="flex items-center justify-center space-x-2 rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
+            className="flex items-center justify-center space-x-2 rounded-lg bg-gremso px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gremso-dark"
           >
             <Plus className="w-4 h-4" />
             <span>Add Team Member</span>
@@ -127,7 +127,7 @@ export default function ProjectTeam({ projectId }: { projectId: string }) {
             {team.map((member) => (
               <div key={member._id} className="flex items-start justify-between space-x-4 p-4 rounded-xl border border-[#E5DED6] hover:bg-[#F6F3EE] transition-colors">
                 <div className="flex items-start space-x-4 min-w-0">
-                  <div className="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center text-lg font-bold shrink-0">
+                  <div className="w-12 h-12 bg-gremso text-white rounded-full flex items-center justify-center text-lg font-bold shrink-0">
                     {member.name?.charAt(0)}
                   </div>
                   <div className="min-w-0">
@@ -173,7 +173,7 @@ export default function ProjectTeam({ projectId }: { projectId: string }) {
                   value={memberSearch}
                   onChange={(e) => setMemberSearch(e.target.value)}
                   placeholder="Search by name"
-                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg outline-none focus:border-[#2563EB] mb-3"
+                  className="w-full px-4 py-2 border border-[#E5DED6] rounded-lg outline-none focus:border-gremso mb-3"
                 />
                 <label className="block text-sm font-medium text-[#1F2937] mb-2">Select Team Members</label>
                 <div className="max-h-64 overflow-y-auto border border-[#E5DED6] rounded-lg divide-y divide-[#E5DED6]">
@@ -183,7 +183,7 @@ export default function ProjectTeam({ projectId }: { projectId: string }) {
                         type="checkbox"
                         checked={selectedUserIds.includes(m._id)}
                         onChange={() => handleMemberSelection(m._id)}
-                        className="mt-1 h-4 w-4 rounded border-[#D1D5DB] text-[#2563EB] focus:ring-[#2563EB]"
+                        className="mt-1 h-4 w-4 rounded border-[#D1D5DB] text-gremso focus:ring-gremso"
                       />
                       <div className="min-w-0">
                         <p className="text-sm font-medium text-[#1F2937] truncate">{m.name}</p>
@@ -201,7 +201,7 @@ export default function ProjectTeam({ projectId }: { projectId: string }) {
               </div>
               <div className="flex justify-end gap-3 pt-4 border-t border-[#E5DED6]">
                 <button type="button" onClick={() => { setIsAddModalOpen(false); setSelectedUserIds([]); setMemberSearch(''); }} className="px-4 py-2 text-[#6B7280]">Cancel</button>
-                <button type="submit" disabled={selectedUserIds.length === 0} className="px-4 py-2 bg-[#2563EB] text-white rounded-lg disabled:opacity-50">Add Member</button>
+                <button type="submit" disabled={selectedUserIds.length === 0} className="px-4 py-2 bg-gremso text-white rounded-lg disabled:opacity-50">Add Member</button>
               </div>
             </form>
           </div>

@@ -8,7 +8,6 @@ import {
   Users,
   Settings,
   LogOut,
-  Hammer,
   Folder,
   Lock,
 } from "lucide-react";
@@ -17,6 +16,7 @@ import { usePlan } from "../context/PlanContext";
 import { authService } from "../services/authService";
 import { hasFeatureAccess } from "../utils/planUtils";
 import { isManagerRole } from "../utils/roleUtils";
+import gremsoLogo from "../assets/gremso-logo.png";
 
 type SidebarProps = {
   isOpen: boolean;
@@ -85,10 +85,14 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     >
       <div className="border-b border-[#E5DED6] p-4">
         <Link to="/" className="flex items-center space-x-2" onClick={onClose}>
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#2563EB]">
-            <Hammer className="h-5 w-5 text-white" />
-          </div>
-          <span className="font-semibold text-[#1F2937]">GREMSO</span>
+          <img
+            src={gremsoLogo}
+            alt="Gremso"
+            className="h-12 w-12 object-contain shrink-0"
+            width={48}
+            height={48}
+          />
+          <span className="font-semibold text-[#1F2937]">Gremso</span>
         </Link>
       </div>
 
@@ -135,7 +139,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
               onClick={onClose}
               className={`flex items-center space-x-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                 isActive
-                  ? "bg-white text-[#2563EB] shadow-sm"
+                  ? "bg-white text-gremso shadow-sm"
                   : "text-[#6B7280] hover:bg-[#F6F3EE] hover:text-[#1F2937]"
               }`}
             >
@@ -161,7 +165,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           {isManager ? (
             <Link
               to="/pricing"
-              className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-[#2563EB] px-3 py-2 text-sm font-medium text-white"
+              className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-gremso px-3 py-2 text-sm font-medium text-white"
             >
               Upgrade Plan
             </Link>

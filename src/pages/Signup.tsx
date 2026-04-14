@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { Hammer, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
+import gremsoLogo from '../assets/gremso-logo.png';
 
 import toast from 'react-hot-toast';
 import { authService, inviteStorage } from '../services/authService';
@@ -127,9 +128,13 @@ export default function Signup() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center justify-center mb-6">
-            <div className="w-12 h-12 bg-[#2563EB] rounded-xl flex items-center justify-center">
-              <Hammer className="w-7 h-7 text-white" />
-            </div>
+            <img
+              src={gremsoLogo}
+              alt="Gremso"
+              className="h-12 w-12 object-contain"
+              width={48}
+              height={48}
+            />
           </Link>
           <h2 className="text-3xl font-bold text-[#1F2937] mb-2">
             Create your account
@@ -170,7 +175,7 @@ export default function Signup() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2563EB] transition-colors ${errors.name ? 'border-red-500' : 'border-[#E5DED6]'
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gremso transition-colors ${errors.name ? 'border-red-500' : 'border-[#E5DED6]'
                   }`}
                 placeholder="John Doe"
               />
@@ -192,7 +197,7 @@ export default function Signup() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2563EB] transition-colors ${errors.email ? 'border-red-500' : 'border-[#E5DED6]'
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gremso transition-colors ${errors.email ? 'border-red-500' : 'border-[#E5DED6]'
                   }`}
                 placeholder="you@example.com"
               />
@@ -225,7 +230,7 @@ export default function Signup() {
               type="submit"
               disabled={isLoading}
               className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white transition-colors ${
-                isLoading ? 'bg-[#E5DED6] cursor-not-allowed text-[#6B7280]' : 'bg-[#2563EB] hover:bg-[#1D4ED8] shadow-sm'
+                isLoading ? 'bg-[#E5DED6] cursor-not-allowed text-[#6B7280]' : 'bg-gremso hover:bg-gremso-dark shadow-sm'
               }`}
             >
               {isLoading && <Loader2 className="w-5 h-5 mr-2 animate-spin" />}
@@ -238,7 +243,7 @@ export default function Signup() {
               Already have an account?{' '}
               <Link
                 to="/login"
-                className="font-medium text-[#1F2937] hover:text-[#2563EB] transition-colors"
+                className="font-medium text-[#1F2937] hover:text-gremso transition-colors"
               >
                 Sign in
               </Link>
@@ -249,11 +254,11 @@ export default function Signup() {
         <div className="mt-6 text-center">
           <p className="text-xs text-[#6B7280]">
             By creating an account, you agree to our{' '}
-            <Link to="/policy" className="text-[#1F2937] hover:text-[#2563EB]">
+            <Link to="/policy" className="text-[#1F2937] hover:text-gremso">
               Terms of Service
             </Link>{' '}
             and{' '}
-            <Link to="/policy" className="text-[#1F2937] hover:text-[#2563EB]">
+            <Link to="/policy" className="text-[#1F2937] hover:text-gremso">
               Privacy Policy
             </Link>
           </p>

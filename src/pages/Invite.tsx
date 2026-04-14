@@ -67,7 +67,7 @@ export default function Invite() {
               <p className="mt-4 text-[#6B7280]">{error}</p>
               <Link
                 to="/login"
-                className="mt-6 inline-flex rounded-lg bg-[#2563EB] px-5 py-3 text-sm font-medium text-white"
+                className="mt-6 inline-flex rounded-lg bg-gremso px-5 py-3 text-sm font-medium text-white"
               >
                 Go to Login
               </Link>
@@ -82,7 +82,7 @@ export default function Invite() {
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link
                   to={`/login?inviteToken=${encodeURIComponent(searchParams.get('token') || '')}`}
-                  className="inline-flex rounded-lg bg-[#2563EB] px-5 py-3 text-sm font-medium text-white"
+                  className="inline-flex rounded-lg bg-gremso px-5 py-3 text-sm font-medium text-white"
                 >
                   Log In
                 </Link>
