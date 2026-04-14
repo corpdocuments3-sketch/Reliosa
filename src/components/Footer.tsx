@@ -89,14 +89,6 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link
-                  to="/blog"
-                  className={`text-base text-gray-500 transition-colors ${linkHover}`}
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/help"
                   className={`text-base text-gray-500 transition-colors ${linkHover}`}
                 >

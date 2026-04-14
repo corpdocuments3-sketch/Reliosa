@@ -1,17 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import {
-  ArrowRight,
-  Shield,
-  Zap,
-  Users,
-  BarChart,
-  Clock,
-  Globe,
-} from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FeatureCard from '../components/FeatureCard';
+import {
+  FEATURES_INTRO,
+  FEATURES_TAGLINE,
+  HOME_MARKETING_FEATURES,
+} from '../constants/featuresMarketing';
 import PricingCard from '../components/PricingCard';
 import Workflow from '../components/Workflow';
 import FAQ from '../components/FAQ';
@@ -32,45 +29,6 @@ export default function Home() {
       navigate(`${destination}?inviteToken=${encodeURIComponent(inviteToken)}`, { replace: true });
     }
   }, [inviteAction, inviteToken, navigate]);
-
-  const features = [
-    {
-      icon: Shield,
-      title: 'Safety First',
-      description:
-        'Ensure compliance with safety regulations and track certifications in real-time.',
-    },
-    {
-      icon: Zap,
-      title: 'Lightning Fast',
-      description:
-        'Manage projects efficiently with our optimized workflow tools and automation.',
-    },
-    {
-      icon: Users,
-      title: 'Team Collaboration',
-      description:
-        'Connect your entire team with seamless communication and task management.',
-    },
-    {
-      icon: BarChart,
-      title: 'Analytics & Insights',
-      description:
-        'Make data-driven decisions with comprehensive project analytics and reports.',
-    },
-    {
-      icon: Clock,
-      title: 'Time Tracking',
-      description:
-        'Track hours, manage schedules, and optimize resource allocation effortlessly.',
-    },
-    {
-      icon: Globe,
-      title: 'Accessible Anywhere',
-      description:
-        'Access your projects from any device, anywhere in the world, anytime.',
-    },
-  ];
 
   const pricingPlans = [
     {
@@ -177,17 +135,30 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1F2937] mb-4">
-              Everything you need
+              {FEATURES_TAGLINE}
             </h2>
-            <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
-              Powerful features to streamline your scaffolding operations and
-              boost team productivity.
+            <p className="text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed">
+              {FEATURES_INTRO}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <FeatureCard key={index} {...feature} />
+            {HOME_MARKETING_FEATURES.map((feature) => (
+              <FeatureCard
+                key={feature.title}
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              to="/features"
+              className="inline-flex items-center text-sm font-semibold text-gremso-dark transition-colors hover:text-gremso"
+            >
+              Explore all features
+              <ArrowRight className="ml-1.5 h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

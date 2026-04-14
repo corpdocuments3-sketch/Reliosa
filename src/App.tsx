@@ -26,7 +26,6 @@ import Meetings from './pages/Meetings';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Careers from './pages/Careers';
-import Blog from './pages/Blog';
 import HelpCenter from './pages/HelpCenter';
 import Invite from './pages/Invite';
 
@@ -41,7 +40,6 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/help" element={<HelpCenter />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/privacy" element={<Policy />} />
