@@ -223,7 +223,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-gray-800" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-800 mb-2">
-                  Company Address
+                  Contact Address
                 </h3>
                 <p className="text-gray-500">
                   S/O: Prabhu Dayal Gurjar,
