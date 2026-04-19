@@ -12,10 +12,10 @@ export default function About() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-gray-800 mb-6">
-            About Gremso
+            About Reliosa
           </h1>
           <p className="text-xl text-gray-500 leading-relaxed">
-            Gremso is an independent SaaS product on a mission to help
+            Reliosa is an independent SaaS product on a mission to help
             construction teams manage scaffolding projects with clearer
             workflows, safer operations, and less friction.
           </p>
@@ -31,8 +31,8 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed">
                 <p>
-                  <strong>Gremso</strong> is built and operated by{' '}
-                  <strong>Babu Lal Gurjar</strong>. It started from a simple
+                  <strong>Reliosa</strong> is built and operated by{' '}
+                  <strong>Pintu Poswal</strong>. It started from a simple
                   observation: construction teams were juggling scattered tools
                   to run complex scaffolding work—documents, deadlines, and
                   coordination were harder than they needed to be.
@@ -46,7 +46,7 @@ export default function About() {
                 <p>
                   Because the product is individually led, decisions stay close
                   to the people who use it: ship useful features, listen to
-                  feedback, and keep quality high. Teams use <strong>Gremso</strong>{' '}
+                  feedback, and keep quality high. Teams use <strong>Reliosa</strong>{' '}
                   to run scaffolding operations with clearer accountability and
                   a smoother day-to-day rhythm.
                 </p>
@@ -82,7 +82,7 @@ export default function About() {
               </h3>
               <p className="text-gray-500 leading-relaxed">
                 A future where field and office teams share one trusted home for
-                projects and documents—where <strong>Gremso</strong> keeps
+                projects and documents—where <strong>Reliosa</strong> keeps
                 improving through direct feedback and steady, thoughtful
                 iteration from an independent builder.
               </p>
@@ -96,7 +96,7 @@ export default function About() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Why choose Gremso?
+            Why choose Reliosa?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div>
@@ -119,7 +119,7 @@ export default function About() {
                 Owner-led quality
               </h3>
               <p className="text-gray-500 text-sm">
-                Shaped by Babu Lal Gurjar with a direct line from users to the
+                Shaped by Pintu Poswal with a direct line from users to the
                 product roadmap.
               </p>
             </div>
@@ -146,7 +146,7 @@ export default function About() {
           </h2>
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
             Become part of a growing group of construction professionals using{' '}
-            <strong className="font-bold text-white">Gremso</strong> to run their projects.
+            <strong className="font-bold text-white">Reliosa</strong> to run their projects.
           </p>
           <Link
             to="/signup"

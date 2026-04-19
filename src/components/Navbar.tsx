@@ -44,7 +44,7 @@ export default function Navbar() {
               width={40}
               height={40}
             />
-            <span className="text-xl font-semibold text-[#1F2937]">GREMSO</span>
+            <span className="text-xl font-semibold text-[#1F2937]">RELIOSA</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">

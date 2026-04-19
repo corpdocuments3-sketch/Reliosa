@@ -92,7 +92,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             width={48}
             height={48}
           />
-          <span className="font-semibold text-[#1F2937]">Gremso</span>
+          <span className="font-semibold text-[#1F2937]">Reliosa</span>
         </Link>
       </div>
 

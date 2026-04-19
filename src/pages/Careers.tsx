@@ -55,7 +55,7 @@ export default function Careers() {
         <section className="border-b border-gray-100 bg-[#F6F3EE]/60 px-4 pb-14 pt-32 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-[#1F2937] sm:text-5xl">
-              Gremso Careers
+              Reliosa Careers
             </h1>
             <p className="mt-4 text-xl font-semibold text-gremso-dark sm:text-2xl">
               {CAREERS_TAGLINE}

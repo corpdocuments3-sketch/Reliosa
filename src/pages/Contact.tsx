@@ -196,10 +196,10 @@ export default function Contact() {
                 </h3>
                 <p className="mb-2 text-sm text-gray-500">For support</p>
                 <a
-                  href="mailto:support@gremso.com"
+                  href="mailto:pintuposwal817@gmail.com"
                   className="text-gray-500 transition-colors hover:text-gray-800"
                 >
-                  support@gremso.com
+                  pintuposwal817@gmail.com
                 </a>
               </div>
 

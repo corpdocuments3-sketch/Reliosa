@@ -13,7 +13,7 @@ import PricingCard from '../components/PricingCard';
 import Workflow from '../components/Workflow';
 import FAQ from '../components/FAQ';
 import Newsletter from '../components/Newsletter';
-import dashboardImg from '../assets/dashboard.png';
+import dashboardImg from '../assets/dashnew.png';
 
 export default function Home() {
   const navigate = useNavigate();

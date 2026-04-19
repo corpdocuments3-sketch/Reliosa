@@ -15,7 +15,7 @@ import {
 export const FEATURES_TAGLINE = 'Features that Keep Your Projects Moving';
 
 export const FEATURES_INTRO =
-  'Gremso brings everything your construction team needs into one powerful, organized workspace—so you can focus on delivery, not coordination.';
+  'Reliosa brings everything your construction team needs into one powerful, organized workspace—so you can focus on delivery, not coordination.';
 
 export type MarketingFeatureItem = {
   icon: LucideIcon;
@@ -120,7 +120,7 @@ export const MARKETING_FEATURES: MarketingFeatureItem[] = [
     icon: Sparkles,
     title: 'All-in-One Platform',
     description: 'No more switching between disconnected tools.',
-    body: 'Gremso combines project tracking, document control, meetings, and collaboration into a single system—so your team works faster, smarter, and with fewer errors.',
+    body: 'Reliosa combines project tracking, document control, meetings, and collaboration into a single system—so your team works faster, smarter, and with fewer errors.',
   },
   {
     icon: HardHat,

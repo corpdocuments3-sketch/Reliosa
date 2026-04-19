@@ -18,7 +18,7 @@ export default function Footer() {
                 height={48}
               />
               <span className="text-xl font-bold text-gray-800 tracking-tight">
-                GREMSO
+                RELIOSA
               </span>
             </div>
             <p className="text-base text-gray-500 mb-8 max-w-sm leading-relaxed">
@@ -150,7 +150,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col items-center justify-center space-y-1 mb-4">
             <p className="text-sm text-gray-500 text-center font-medium">
-              Gremso is operated by Babu Lal Gurjar.
+              Reliosa is operated by Pintu Poswal.
             </p>
             <p className="text-sm text-gray-500 text-center">
               Questions?{" "}
@@ -164,7 +164,7 @@ export default function Footer() {
             </p>
           </div>
           <p className="text-sm text-gray-500 text-center">
-            &copy; {new Date().getFullYear()} Babu Lal Gurjar. All rights
+            &copy; {new Date().getFullYear()} Pintu Poswal. All rights
             reserved.
           </p>
         </div>

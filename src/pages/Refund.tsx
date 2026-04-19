@@ -50,18 +50,18 @@ export default function Refund() {
           <div className="prose prose-lg max-w-none">
             <div className="bg-white rounded-xl border border-[#E5DED6] p-8 mb-6">
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                Welcome to <strong>Gremso</strong> (&quot;we,&quot; &quot;our,&quot;
+                Welcome to <strong>Reliosa</strong> (&quot;we,&quot; &quot;our,&quot;
                 &quot;us&quot;), accessible at:
               </p>
               <p className="text-[#6B7280] leading-relaxed mb-4">
                 <strong>
                   <a
-                    href="https://gremso.com/"
+                    href="https://reliosa.com/"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://gremso.com/
+                    https://reliosa.com/
                   </a>
                 </strong>
               </p>
@@ -72,7 +72,7 @@ export default function Refund() {
               </p>
               <p className="text-[#6B7280] leading-relaxed">
                 This website and service are owned and operated by{' '}
-                <strong>Babu Lal Gurjar</strong>.
+                <strong>Pintu Poswal</strong>.
               </p>
             </div>
 
@@ -83,19 +83,17 @@ export default function Refund() {
               <ul className="list-none text-[#6B7280] space-y-2">
                 <li>
                   <strong className="text-[#1F2937]">Business Name:</strong>{' '}
-                  Gremso
+                  Reliosa
                 </li>
                 <li>
-                  <strong className="text-[#1F2937]">Owner:</strong> Babu Lal
-                  Gurjar
+                  <strong className="text-[#1F2937]">Owner:</strong> Pintu Poswal
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Address:</strong>
                   <span className="block mt-1 pl-0 sm:pl-4 whitespace-pre-line">
-                    {`S/O: Prabhu Dayal Gurjar
-Balwanta, Rajosi
-Ajmer, Rajasthan – 305401
-India`}
+                    {`S/O: Ravindra Gurjar, balwanta, Rajosi,
+Bhwani Khera, Ajmer, Rajasthan, 305401
+`}
                   </span>
                 </li>
               </ul>
@@ -106,7 +104,7 @@ India`}
                 2. Subscription Policy
               </h2>
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                Gremso operates on a subscription-based billing model.
+                Reliosa operates on a subscription-based billing model.
               </p>
               <ul className="list-disc list-inside text-[#6B7280] space-y-2">
                 <li>
@@ -182,10 +180,10 @@ India`}
                 <li>
                   To request a refund, contact:{' '}
                   <a
-                    href="mailto:support@gremso.com"
+                    href="mailto:pintuposwal817@gmail.com"
                     className="font-semibold text-[#1F2937] underline underline-offset-2 hover:no-underline"
                   >
-                    support@gremso.com
+                    pintuposwal817@gmail.com
                   </a>
                 </li>
                 <li>Provide:</li>
@@ -275,39 +273,37 @@ India`}
               <ul className="list-none text-[#6B7280] space-y-2">
                 <li>
                   <strong className="text-[#1F2937]">Business Name:</strong>{' '}
-                  Gremso
+                  Reliosa
                 </li>
                 <li>
-                  <strong className="text-[#1F2937]">Owner:</strong> Babu Lal
-                  Gurjar
+                  <strong className="text-[#1F2937]">Owner:</strong> Pintu Poswal
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Email:</strong>{' '}
                   <a
-                    href="mailto:support@gremso.com"
+                    href="mailto:pintuposwal817@gmail.com"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                   >
-                    support@gremso.com
+                    pintuposwal817@gmail.com
                   </a>
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Address:</strong>
                   <span className="block mt-1 pl-0 sm:pl-4 whitespace-pre-line">
-                    {`S/O: Prabhu Dayal Gurjar
-Balwanta, Rajosi
-Ajmer, Rajasthan – 305401
-India`}
+                    {`S/O: Ravindra Gurjar, balwanta, Rajosi,
+Bhwani Khera, Ajmer, Rajasthan, 305401
+`}
                   </span>
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Website:</strong>{' '}
                   <a
-                    href="https://gremso.com/"
+                    href="https://reliosa.com/"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://gremso.com/
+                    https://reliosa.com/
                   </a>
                 </li>
               </ul>

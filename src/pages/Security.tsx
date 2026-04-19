@@ -42,26 +42,26 @@ export default function Security() {
           <div className="prose prose-lg max-w-none">
             <div className="bg-white rounded-xl border border-[#E5DED6] p-8 mb-6">
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                At Gremso, security is a top priority. We are committed to
+                At Reliosa, security is a top priority. We are committed to
                 protecting your data, ensuring platform reliability, and
                 maintaining a secure environment for all users.
               </p>
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                Gremso is accessible at:{' '}
+                Reliosa is accessible at:{' '}
                 <strong>
                   <a
-                    href="https://gremso.com/"
+                    href="https://reliosa.com/"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://gremso.com/
+                    https://reliosa.com/
                   </a>
                 </strong>
               </p>
               <p className="text-[#6B7280] leading-relaxed">
                 This service is owned and operated by{' '}
-                <strong>Babu Lal Gurjar</strong>.
+                <strong>Pintu Poswal</strong>.
               </p>
             </div>
 
@@ -252,10 +252,10 @@ export default function Security() {
               </p>
               <p className="text-[#6B7280] leading-relaxed mb-4">
                 <a
-                  href="mailto:support@gremso.com"
+                  href="mailto:pintuposwal817@gmail.com"
                   className="text-lg font-semibold text-[#1F2937] underline underline-offset-2 hover:no-underline"
                 >
-                  support@gremso.com
+                  pintuposwal817@gmail.com
                 </a>
               </p>
               <p className="text-[#6B7280] leading-relaxed">
@@ -280,39 +280,37 @@ export default function Security() {
               <ul className="list-none text-[#6B7280] space-y-2">
                 <li>
                   <strong className="text-[#1F2937]">Business Name:</strong>{' '}
-                  Gremso
+                  Reliosa
                 </li>
                 <li>
-                  <strong className="text-[#1F2937]">Owner:</strong> Babu Lal
-                  Gurjar
+                  <strong className="text-[#1F2937]">Owner:</strong> Pintu Poswal
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Email:</strong>{' '}
                   <a
-                    href="mailto:support@gremso.com"
+                    href="mailto:pintuposwal817@gmail.com"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                   >
-                    support@gremso.com
+                    pintuposwal817@gmail.com
                   </a>
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Address:</strong>
                   <span className="block mt-1 pl-0 sm:pl-4 whitespace-pre-line">
-                    {`S/O: Prabhu Dayal Gurjar
-Balwanta, Rajosi
-Ajmer, Rajasthan – 305401
-India`}
+                    {`S/O: Ravindra Gurjar, balwanta, Rajosi,
+Bhwani Khera, Ajmer, Rajasthan, 305401
+`}
                   </span>
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Website:</strong>{' '}
                   <a
-                    href="https://gremso.com/"
+                    href="https://reliosa.com/"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://gremso.com/
+                    https://reliosa.com/
                   </a>
                 </li>
               </ul>

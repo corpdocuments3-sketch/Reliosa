@@ -12,7 +12,7 @@ import {
 export const CAREERS_TAGLINE = 'Build the future of construction teamwork.';
 
 export const CAREERS_INTRO =
-  "At Gremso, we're creating a smarter way for construction teams to manage projects, collaborate, and stay in control. We believe great products come from great people—and we're always looking for driven individuals who want to make an impact.";
+  "At Reliosa, we're creating a smarter way for construction teams to manage projects, collaborate, and stay in control. We believe great products come from great people—and we're always looking for driven individuals who want to make an impact.";
 
 export type CareersSection = {
   icon: LucideIcon;
@@ -50,7 +50,7 @@ export const CAREERS_SECTIONS: CareersSection[] = [
   {
     icon: Wrench,
     title: "What You'll Work On",
-    description: "At Gremso, you'll help build tools that power construction teams daily.",
+    description: "At Reliosa, you'll help build tools that power construction teams daily.",
     bullets: [
       'Project and workflow management systems',
       'Real-time collaboration tools',
@@ -99,16 +99,16 @@ export const CAREERS_SECTIONS: CareersSection[] = [
 
 export const CAREERS_JOIN_HEADING = 'Join Us';
 
-export const CAREERS_JOIN_INTRO = 'Want to be part of Gremso?';
+export const CAREERS_JOIN_INTRO = 'Want to be part of Reliosa?';
 
 export const CAREERS_JOIN_BODY =
   'Send your resume and a short introduction using the address below. Or tell us what you can bring to the team—we value skills and mindset over titles.';
 
-export const CAREERS_EMAIL = 'careers@gremso.com';
+export const CAREERS_EMAIL = 'careers@reliosa.com';
 
 export const CAREERS_CLOSING_TITLE = "Let's Build Something That Matters";
 
 export const CAREERS_CLOSING_LINE =
-  'Gremso is growing—and this is your chance to grow with it.';
+  'Reliosa is growing—and this is your chance to grow with it.';
 
 export const CareersClosingIcon = Zap;

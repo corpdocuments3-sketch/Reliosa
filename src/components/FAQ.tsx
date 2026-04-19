@@ -3,9 +3,9 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'What is Gremso?',
+    question: 'What is Reliosa?',
     answer:
-      'Gremso is a cloud-based productivity and collaboration platform designed for modern teams to organize documents, manage projects, and track tasks in one unified interface.',
+      'Reliosa is a cloud-based productivity and collaboration platform designed for modern teams to organize documents, manage projects, and track tasks in one unified interface.',
   },
   {
     question: 'Is there a free trial?',

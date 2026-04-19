@@ -42,18 +42,18 @@ export default function Policy() {
           <div className="prose prose-lg max-w-none">
             <div className="bg-white rounded-xl border border-[#E5DED6] p-8 mb-6">
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                Welcome to <strong>Gremso</strong> (&quot;we,&quot; &quot;our,&quot;
+                Welcome to <strong>Reliosa</strong> (&quot;we,&quot; &quot;our,&quot;
                 &quot;us&quot;), accessible at:
               </p>
               <p className="text-[#6B7280] leading-relaxed mb-4">
                 <strong>
                   <a
-                    href="https://gremso.com/"
+                    href="https://reliosa.com/"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://gremso.com/
+                    https://reliosa.com/
                   </a>
                 </strong>
               </p>
@@ -63,10 +63,10 @@ export default function Policy() {
               </p>
               <p className="text-[#6B7280] leading-relaxed mb-4">
                 This website and service are owned and operated by{' '}
-                <strong>Babu Lal Gurjar</strong>.
+                <strong>Pintu Poswal</strong>.
               </p>
               <p className="text-[#6B7280] leading-relaxed">
-                By using Gremso, you agree to this Privacy Policy.
+                By using Reliosa, you agree to this Privacy Policy.
               </p>
             </div>
 
@@ -77,19 +77,17 @@ export default function Policy() {
               <ul className="list-none text-[#6B7280] space-y-2">
                 <li>
                   <strong className="text-[#1F2937]">Business Name:</strong>{' '}
-                  Gremso
+                  Reliosa
                 </li>
                 <li>
-                  <strong className="text-[#1F2937]">Owner:</strong> Babu Lal
-                  Gurjar
+                  <strong className="text-[#1F2937]">Owner:</strong> Pintu Poswal
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Address:</strong>
                   <span className="block mt-1 pl-0 sm:pl-4 whitespace-pre-line">
-                    {`S/O: Prabhu Dayal Gurjar
-Balwanta, Rajosi
-Ajmer, Rajasthan – 305401
-India`}
+                    {`S/O: Ravindra Gurjar, balwanta, Rajosi,
+Bhwani Khera, Ajmer, Rajasthan, 305401
+`}
                   </span>
                 </li>
               </ul>
@@ -248,10 +246,10 @@ India`}
               <p className="text-[#6B7280] leading-relaxed">
                 To exercise your rights, contact us at:{' '}
                 <a
-                  href="mailto:support@gremso.com"
+                  href="mailto:pintuposwal817@gmail.com"
                   className="font-semibold text-[#1F2937] underline underline-offset-2 hover:no-underline"
                 >
-                  support@gremso.com
+                  pintuposwal817@gmail.com
                 </a>
               </p>
             </div>
@@ -261,7 +259,7 @@ India`}
                 9. Third-Party Services
               </h2>
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                Gremso may integrate with third-party tools and services.
+                Reliosa may integrate with third-party tools and services.
               </p>
               <p className="text-[#6B7280] leading-relaxed">
                 We are not responsible for their privacy practices. Please review
@@ -274,7 +272,7 @@ India`}
                 10. Children&apos;s Privacy
               </h2>
               <p className="text-[#6B7280] leading-relaxed mb-4">
-                Gremso is not intended for individuals under the age of 18.
+                Reliosa is not intended for individuals under the age of 18.
               </p>
               <p className="text-[#6B7280] leading-relaxed">
                 We do not knowingly collect data from children.
@@ -286,7 +284,7 @@ India`}
                 11. International Data Transfers
               </h2>
               <p className="text-[#6B7280] leading-relaxed">
-                If you access Gremso from outside India, your data may be
+                If you access Reliosa from outside India, your data may be
                 transferred to and processed in India.
               </p>
             </div>
@@ -314,39 +312,37 @@ India`}
               <ul className="list-none text-[#6B7280] space-y-2">
                 <li>
                   <strong className="text-[#1F2937]">Business Name:</strong>{' '}
-                  Gremso
+                  Reliosa
                 </li>
                 <li>
-                  <strong className="text-[#1F2937]">Owner:</strong> Babu Lal
-                  Gurjar
+                  <strong className="text-[#1F2937]">Owner:</strong> Pintu Poswal
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Email:</strong>{' '}
                   <a
-                    href="mailto:support@gremso.com"
+                    href="mailto:pintuposwal817@gmail.com"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                   >
-                    support@gremso.com
+                    pintuposwal817@gmail.com
                   </a>
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Address:</strong>
                   <span className="block mt-1 pl-0 sm:pl-4 whitespace-pre-line">
-                    {`S/O: Prabhu Dayal Gurjar
-Balwanta, Rajosi
-Ajmer, Rajasthan – 305401
-India`}
+                    {`S/O: Ravindra Gurjar, balwanta, Rajosi,
+Bhwani Khera, Ajmer, Rajasthan, 305401
+`}
                   </span>
                 </li>
                 <li>
                   <strong className="text-[#1F2937]">Website:</strong>{' '}
                   <a
-                    href="https://gremso.com/"
+                    href="https://reliosa.com/"
                     className="text-[#1F2937] underline underline-offset-2 hover:no-underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://gremso.com/
+                    https://reliosa.com/
                   </a>
                 </li>
               </ul>

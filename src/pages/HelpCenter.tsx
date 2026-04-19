@@ -29,7 +29,7 @@ type HelpSection = {
 const helpSections: HelpSection[] = [
   {
     title: 'Getting Started',
-    description: 'New to Gremso? Start here.',
+    description: 'New to Reliosa? Start here.',
     topics: [
       'How to create your workspace',
       'Setting up your first project',
@@ -101,7 +101,7 @@ const helpSections: HelpSection[] = [
   },
   {
     title: 'Security & Data Protection',
-    description: 'Your data is safe with Gremso.',
+    description: 'Your data is safe with Reliosa.',
     topics: [
       'Secure document storage',
       'Role-based access control',
@@ -127,24 +127,24 @@ const helpSections: HelpSection[] = [
 
 const faqs = [
   {
-    question: 'Is Gremso suitable for small teams?',
+    question: 'Is Reliosa suitable for small teams?',
     answer:
-      'Yes, Gremso is designed to scale from small teams to large construction operations.',
+      'Yes, Reliosa is designed to scale from small teams to large construction operations.',
   },
   {
-    question: 'Can field teams use Gremso easily?',
+    question: 'Can field teams use Reliosa easily?',
     answer:
       "Yes, it's built to work for both on-site and office teams.",
   },
   {
     question: 'Is my data secure?',
     answer:
-      'Yes, Gremso uses structured access control and secure storage.',
+      'Yes, Reliosa uses structured access control and secure storage.',
   },
   {
     question: 'Can I manage multiple projects at once?',
     answer:
-      'Absolutely, Gremso is designed for multi-project management.',
+      'Absolutely, Reliosa is designed for multi-project management.',
   },
 ];
 
@@ -159,7 +159,7 @@ export default function HelpCenter() {
         <section className="border-b border-gray-100 bg-[#F6F3EE]/60 px-4 pb-14 pt-32 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-[#1F2937] sm:text-5xl">
-              Gremso Help Center
+              Reliosa Help Center
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-[#6B7280] sm:text-xl">
               Everything you need to get started, manage your workspace, and keep
@@ -208,7 +208,7 @@ export default function HelpCenter() {
                 Frequently Asked Questions
               </h2>
               <p className="mt-3 text-lg text-gray-600">
-                Quick answers to common questions about Gremso.
+                Quick answers to common questions about Reliosa.
               </p>
             </div>
             <div className="space-y-4">
@@ -257,11 +257,11 @@ export default function HelpCenter() {
               </p>
               <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-6">
                 <a
-                  href="mailto:support@gremso.com"
+                  href="mailto:pintuposwal817@gmail.com"
                   className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-gremso-dark transition-colors hover:bg-gray-100"
                 >
                   <Mail className="h-4 w-4" />
-                  support@gremso.com
+                  pintuposwal817@gmail.com
                 </a>
                 <span className="text-sm text-white/80">
                   Response time: within 24 hours
